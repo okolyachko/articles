@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:art="http://www.rsc.org.ezproxy.uky.edu/schema/rscart38" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:rsc="urn:rsc.org" xml:lang="en" lang="en"><head><!--Google Tag Manager--><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-56FZ7G');</script><!--End Google Tag Manager--><title>Reduction potential predictions of some aromatic nitrogen-containing molecules   - RSC Advances (RSC Publishing) DOI:10.1039/C4RA08563A</title><link rel="canonical" href="https://pubs-rsc-org.ezproxy.uky.edu/en/content/articlehtml/2014/ra/c4ra08563a"/><meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"eec2473e72","applicationID":"13881625","transactionName":"ZFUBZhEEDUQEBhBbDl0fLmQgSiBYCxEBXBVwXw1GEQoPWwAXS1MTR1kAXgYNF1oJ","queueTime":0,"applicationTime":100,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VQYFWF9aDBABV1laBgcFUw==",licenseKey:"eec2473e72",applicationID:"13881625"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(32),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(33),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError";if(!c.disabled){var l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(14),t(13),"addEventListener"in window&&t(7),c.xhrWrappable&&t(15),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){U++,L=g.hash,this[u]=y.now()}function o(){U--,g.hash!==L&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(11),b=t(12),E=t(9),R=t(7),O=t(14),T=t(8),S=t(15),P=t(10),M=t("ee"),C=M.get("tracer"),N=t(23);t(17),y.features.spa=!0;var L,U=0;M.on(u,r),b.on(p,r),P.on(p,r),M.on(d,o),b.on(l,o),P.on(l,o),M.buffer([u,d,"xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),S.buffer([u,"new-xhr","send-xhr"+s]),T.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),C.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,m+s),a(T,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,N(!0)),w[v]("load",i,N(!0)),w[v]("popstate",function(){i(0,U>1)},N(!0))}},{}],5:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function o(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+p])try{window.performance[h](m,o,!1)}catch(t){}else try{window.performance[h]("webkit"+m,o,!1)}catch(t){}}function i(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(14),f=t(13),u=t(6),d=t(23),p="learResourceTimings",l="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",O=t("loader");if(!O.disabled){O.features.stn=!0,t(9),"addEventListener"in window&&t(7);var T=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof T&&(this.bstStart=O.now())}),a.on(b,function(t,e){var n=t[0];n instanceof T&&s("bst",[n,e,this.bstStart,O.now()])}),c.on(x,function(t,e,n){this.bstStart=O.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),this.bstType])}),f.on(x,function(){this.bstStart=O.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=O.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):l in window.performance&&(window.performance["c"+p]?window.performance[l](m,o,d(!1)):window.performance[l]("webkit"+m,o,d(!1))),document[l]("scroll",i,d(!1)),document[l]("keypress",i,d(!1)),document[l]("click",i,d(!1))}}},{}],6:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],7:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],8:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(33),a=t(32);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],9:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],10:[function(t,e,n){function r(t){function e(){f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}function n(){f.emit("jsonp-error",[],l),f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var d=s(a),p="function"==typeof d.parent[d.key];if(p){var l={};u.inPlace(d.parent,[d.key],"cb-",l),t.addEventListener("load",e,c(!1)),t.addEventListener("error",n,c(!1)),f.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(d);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(p);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t(23),f=t("ee").get("jsonp"),u=t("wrap-function")(f);if(e.exports=f,o()){var d=/[?&](?:callback|cb)=([^&#]+)/,p=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?u.inPlace(Node.prototype,h,"dom-"):(u.inPlace(HTMLElement.prototype,h,"dom-"),u.inPlace(HTMLHeadElement.prototype,h,"dom-"),u.inPlace(HTMLBodyElement.prototype,h,"dom-")),f.on("dom-start",function(t){r(t[0])})}},{}],11:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],12:[function(t,e,n){function r(t){var e=i.context(),n=s(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,s=o(i),c=t(32),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),s=f.resolve(a);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=s(n[0],"cb-",r,null,!1),n[1]=s(n[1],"cb-",r,null,!1);var c=t.apply(this,n);return r.nextPromise=c,i.emit("propagate",[e,!0],c,!1,!1),c}}),i.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this,null,!1),t[1]=s(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],13:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],14:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],15:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,O.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(7);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=t(23),l=NREUM.o,h=l.XHR,m=l.MO,v=l.PR,w=l.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,o,p(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,O=document.createTextNode(R);new m(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],16:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",s=1,c="",f="";return o+"@nr="+i+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(29),h=t(18);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],17:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function o(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(18),f=t(16).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(24),m=t(22),v=t(19),w=t(23),g=t(25).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(15),t(8),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;if("string"==typeof i?n=i:"object"==typeof i&&i instanceof y?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),o(this,n),"data"!==this.params.protocol){var s=(""+(i&&i instanceof y&&i.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],18:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],19:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(22);e.exports=r},{}],20:[function(t,e,n){function r(){}function o(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),i(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var i=t("handle"),a=t(32),s=t(33),c=t("ee").get("tracer"),f=t("loader"),u=t(25),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",h=l+"ixn-";a(p,function(t,e){d[e]=o(l,e,!0,"api")}),d.addPageAction=o(l,"addPageAction",!0),d.setCurrentRouteName=o(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=o(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),i("err",[t,f.now(),!1,e])}},{}],21:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],22:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],23:[function(t,e,n){var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(i){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],24:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return i("storeMetric",n,null,"api"),n}function o(t,e){var n=[s,t,{name:t},e];return i("storeEventMetrics",n,null,"api"),n}var i=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:o}},{}],26:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,s=t(34);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],27:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],28:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var o=[r],i=a({});i&&o.push(i),l("lcp",o)}}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,l("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),l("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,p,l=t("handle"),h=t("loader"),m=t(31),v=t(23),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(o);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}p=new PerformanceObserver(i);try{p.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],29:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],30:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],31:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[i]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,o(!1))}var o=t(23);e.exports=r;var i,a,s;"undefined"!=typeof document.hidden?(i="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],32:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],33:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],34:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var s=e(o),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var p=d[y[n]];return p&&p.push([x,n,r,s]),s}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){l.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function i(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",f=t("gos"),u=t(32),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!S++){var t=T.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(R,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+T.offset],null,"api"),s("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=h+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===v.readyState&&i()}function i(){s("mark",["domContent",a()+T.offset],null,"api")}var a=t(26),s=t("handle"),c=t(32),f=t("ee"),u=t(30),d=t(27),p=t(21),l=t(23),h=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,w="addEventListener",g="attachEvent",y=m.XMLHttpRequest,x=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var E=""+location,R={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1214.min.js"},O=y&&x&&x[w]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:u,disabled:b};if(!b){t(20),t(28),v[w]?(v[w]("DOMContentLoaded",i,l(!1)),m[w]("load",r,l(!1))):(v[g]("onreadystatechange",o),m[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var S=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var i,a,u,p;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,c],u],t)}s(n+"start",[i,a,c],u,f);try{return p=e.apply(a,i)}catch(h){throw s(n+"err",[i,a,h],u,f),h}finally{s(n+"end",[i,a,p],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,o,c,i))}function s(n,r,i,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,i,e,a)}catch(c){o([c,n,r,i],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function s(t,e){var n=e(t);return n[p]=t,i(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(33),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,17,5,3,4]);</script><meta charset="UTF-8"/><meta name="robots" content="index, follow"/><meta name="DC.Creator" content="Rajeev S. Assary"/><meta name="DC.Creator" content="Fikile R. Brushett"/><meta name="DC.Creator" content="Larry A. Curtiss"/><meta name="DC.title" content="Reduction potential predictions of some aromatic nitrogen-containing molecules  "/><meta name="DC.publisher" content="Royal Society of Chemistry"/><meta name="DC.Date" content="2014/11/06"/><meta name="DC.Identifier" scheme="doi" content="10.1039/C4RA08563A"/><meta name="DC.Language" content="en"/><meta name="citation_title" content="Reduction potential predictions of some aromatic nitrogen-containing molecules  "/><meta name="citation_author" content="Rajeev S. Assary"/><meta name="citation_author" content="Fikile R. Brushett"/><meta name="citation_author" content="Larry A. Curtiss"/><meta name="citation_online_date" content="2014/10/20"/><meta name="citation_date" content="2014"/><meta name="citation_journal_title" content="RSC Advances"/><meta name="citation_volume" content="4"/><meta name="citation_issue" content="101"/><meta name="citation_firstpage" content="57442"/><meta name="citation_lastpage" content="57451"/><meta name="citation_doi" content="10.1039/C4RA08563A"/><meta name="citation_pdf_url" content="https://pubs-rsc-org.ezproxy.uky.edu/en/content/articlepdf/2014/ra/c4ra08563a"/><meta name="citation_abstract_html_url" content="https://pubs-rsc-org.ezproxy.uky.edu/en/content/articlelanding/2014/ra/c4ra08563a"/><meta name="citation_fulltext_html_url" content="https://pubs-rsc-org.ezproxy.uky.edu/en/content/articlehtml/2014/ra/c4ra08563a"/><link rel="shortcut icon" href=""/><link type="text/css" rel="stylesheet" href="/content/stylesheets/rschtml2.css?ver=6_2_1"/><link href="https://www.rsc-cdn.org/oxygen/assets/webfonts/fonts.min.css" rel="stylesheet" type="text/css"/><link type="text/css" rel="stylesheet" href="/content/stylesheets/pubs-ui.min.css"/><meta name="viewport" content="width=device-width, initial-scale=1"/><script type="text/javascript" src="/content/scripts/JQueryPlugins.min.js"> </script><script type="text/javascript" src="/content/scripts/GetAnchorText.js"> </script><script type="text/javascript">
+    
+      $(function() {
+      $("table.tgroup tfoot th").attr("colspan", "100");
+      $("table.tgroup.rtable").each( function (idx, el) {
+      var tw = $(this).width();
+      $(this).parent().css("min-width", tw+"px");
+      });
+
+      });
+      
+    </script><!--6_2_1--></head><body class="oxy-ui pubs-ui ahtml-page"><!--Google Tag Manager (noscript)--><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56FZ7G" height="0" width="0" style="display:none;visibility:hidden"> </iframe></noscript><!--End Google Tag Manager (noscript)--><div class="viewport autopad"><div class="pnl pnl--drop autopad"><span id="top"/><div id="wrapper"><div class="left_head"><a class="simple" href="/"><img class="rsc-logo" border="0" src="/content/NewImages/royal-society-of-chemistry-logo.png" alt="Royal Society of Chemistry"/></a><br/><span class="btnContainer"><a class="btn btn--tiny btn--primary" target="_blank" title="Link to PDF version" href="/en/content/articlepdf/2014/ra/c4ra08563a">View PDF Version</a></span><span class="btnContainer"><a class="btn btn--tiny btn--nobg" title="Link to previous article (id:c4ra10474a)" href="/en/content/articlehtml/2014/ra/c4ra10474a" target="_BLANK">Previous Article</a></span><span class="btnContainer"><a class="btn btn--tiny btn--nobg" title="Link to next article (id:c4ra09871d)" href="/en/content/articlehtml/2014/ra/c4ra09871d" target="_BLANK">Next Article</a></span></div><div class="right_head"><div id="crossmark_container"><div id="crossmark-content"><a id="open-crossmark" href="#" data-target="crossmark"><img style="max-width:100px" id="crossmark-logo" src="https://crossmark-cdn.crossref.org/widget/v2.0/logos/CROSSMARK_Color_square.svg" alt="Check for updates"/></a><script src="https://crossmark-cdn.crossref.org/widget/v2.0/widget.js"> </script></div></div> </div><div class="article_info"> DOI: <a target="_blank" title="Link to landing page via DOI" href="https://doi-org.ezproxy.uky.edu/10.1039/C4RA08563A">10.1039/C4RA08563A</a>
+(Paper)
+<span class="italic"><a title="Link to journal home page" href="https://doi-org.ezproxy.uky.edu/10.1039/2046-2069/2011">RSC Adv.</a></span>, 2014, <strong>4</strong>, 57442-57451</div><h1 id="sect201"><span class="title_heading">Reduction potential predictions of some aromatic nitrogen-containing molecules<a title="Select to navigate to footnote" href="#fn1">†</a></span></h1><p class="header_text">
+<span class="bold">Rajeev S. Assary</span>*<sup><span class="sup_ref italic">ab</span></sup>, 
+<span class="bold">Fikile R. Brushett</span><sup><span class="sup_ref italic">ac</span></sup><span class="bold"> and </span>
+<span class="bold">Larry A. Curtiss</span><sup><span class="sup_ref italic">ab</span></sup>
+<br/><a id="affa"><sup><span class="sup_ref italic">a</span></sup></a><span class="italic">Joint Center for Energy Storage Research, Argonne National Laboratories, Argonne, IL 60439, USA. E-mail: <a href="mailto:assary@anl.gov">assary@anl.gov</a>;  Fax: +1-630-252-9555;   Tel: +1-630-252-3536</span>
+<br/><a id="affb"><sup><span class="sup_ref italic">b</span></sup></a><span class="italic">Materials Science Division, Argonne National Laboratory, Argonne, IL 60439, USA</span>
+<br/><a id="affc"><sup><span class="sup_ref italic">c</span></sup></a><span class="italic">Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA</span>
+</p><div id="art-admin"><span class="italic bold">Received 
+12th August 2014
+</span><span class="bold italic">, Accepted 17th October 2014</span></div><p class="bold italic">First published on 20th October 2014</p><hr/><div class="abstract"><h2>Abstract</h2><p>Accurate quantum chemical methods offer a reliable alternative to time-consuming experimental evaluations for obtaining <span class="italic">a priori</span> electrochemical knowledge of a large number of redox active molecules. In this contribution, quantum chemical calculations are performed to investigate the redox behavior of quinoxalines, a promising family of active materials for non-aqueous flow batteries, as a function of substituent group. The reduction potentials of 40 quinoxaline derivatives with a range of electron-donating and electron-withdrawing groups are computed. Calculations indicate the addition of electron-donating groups, particularly alkyl groups, can significantly lower the reduction potential albeit with a concomitant decrease in oxidative stability. A simple descriptor is derived for computing reduction potentials of quinoxaline derivatives from the LUMO energies of the neutral molecules without time-consuming free energy calculations. The relationship was validated for a broader set of aromatic nitrogen-containing molecules including pyrazine, phenazine, bipyridine, pyridine, pyrimidine, pyridazine, and quinoline, suggesting that it is a good starting point for large high-throughput computations to screen reduction windows of novel molecules.</p></div><hr/>
+<h2 id="sect263"><span class="a_heading">1. Introduction</span></h2>
+<span>Fundamental breakthroughs are required in electrochemical systems such as advanced metal-intercalation, metal/air, metal/sulfur, and redox flow batteries to improve electrical energy storage for transportation and stationary needs.<a title="Select to navigate to reference" href="#cit1"><sup><span class="sup_ref">1–7</span></sup></a> A redox flow battery (RFB) is an electrochemical device that stores energy in flowable solutions, or suspensions, of electroactive materials, which are housed in external tanks and pumped to a power-generating electroreactor.<a title="Select to navigate to reference" href="#cit8"><sup><span class="sup_ref">8,9</span></sup></a> As compared to enclosed rechargeable batteries, RFBs may offer a number of advantages in terms of cost, performance, and flexibility including decoupled power and energy, long operating lifetimes, simplified manufacturing, and improved safety.</span>
+<p class="otherpara">Recently, the use of redox active organic molecules for energy storage has garnered significant interest due to their high intrinsic capacities, tunable properties <span class="italic">via</span> molecular design, and potentially low costs.<a title="Select to navigate to reference" href="#cit9"><sup><span class="sup_ref">9–16</span></sup></a> For example, Aziz <span class="italic">et al.</span><a title="Select to navigate to references" href="#cit13"><sup><span class="sup_ref">13</span></sup></a> and Narayanan <span class="italic">et al.</span><a title="Select to navigate to references" href="#cit14"><sup><span class="sup_ref">14</span></sup></a> have reported the use of quinone derivatives in acidic aqueous RFBs. Under non-aqueous conditions, molecules such as anthraquinone,<a title="Select to navigate to reference" href="#cit13"><sup><span class="sup_ref">13,17,18</span></sup></a> quinoxaline,<a title="Select to navigate to references" href="#cit11"><sup><span class="sup_ref">11</span></sup></a> and thiophene<a title="Select to navigate to reference" href="#cit19"><sup><span class="sup_ref">19,20</span></sup></a> have been investigated for energy storage applications. Moreover, a number of high-potential redox shuttles have been developed for overcharge protection in lithium-ion batteries.<a title="Select to navigate to references" href="#cit21"><sup><span class="sup_ref">21</span></sup></a> Recently, Brushett <span class="italic">et al.</span> demonstrated an all-organic non-aqueous redox flow (NRF) battery based on quinoxaline derivatives and 2,5-di-<span class="italic">tert</span>-butyl-1,4-bis(2-methoxyethoxy)benzene (DBBB, also referred to as ANL RS2).<a title="Select to navigate to references" href="#cit11"><sup><span class="sup_ref">11</span></sup></a></p>
+<p class="otherpara">There are a large number of redox active organic molecules (<span class="italic">e.g.</span>, aromatics containing N, S, and O atoms) that may be considered for use in NRF batteries. Consequently, the identification of optimal redox couples <span class="italic">via</span> experimentation is a daunting task and rapid screening of redox properties <span class="italic">via</span> reliable computational methods represents a powerful means of down selecting candidates with minimal investment. Indeed, employing accurate quantum chemical methods may enable screening of thousands of molecules for desired electrochemical window, solubility, and stability. Quantum chemical studies to understand the electrochemical windows of select chemical families such as hydrocarbons,<a title="Select to navigate to references" href="#cit22"><sup><span class="sup_ref">22</span></sup></a> quinones<a title="Select to navigate to reference" href="#cit23"><sup><span class="sup_ref">23–28</span></sup></a> and isoindoles<a title="Select to navigate to reference" href="#cit29"><sup><span class="sup_ref">29,30</span></sup></a> are available in the literature. These studies provide a basic understanding of the electrochemical windows that can be used as a first level of screening to narrow down a large molecular set. Similar ‘genome’-scale approaches were found to be efficient for materials discovery in battery<a title="Select to navigate to reference" href="#cit31"><sup><span class="sup_ref">31,32</span></sup></a> and photovoltaic applications.<a title="Select to navigate to references" href="#cit33"><sup><span class="sup_ref">33</span></sup></a></p>
+<p class="otherpara">Herein, we use computations based on density functional theory (DFT) to investigate reduction potentials of quinoxaline and a number of its derivatives (40 molecules) as negative electrolyte materials for NRF batteries (Scheme S1<a title="Select to navigate to footnote" href="#fn1">†</a>).<a title="Select to navigate to references" href="#cit11"><sup><span class="sup_ref">11</span></sup></a> First, we modeled the impact of electron-donating and electron-withdrawing substituent groups on the reduction potentials of quinoxaline molecules. Second, we used the data generated to derive an empirical relationship that connects reduction potentials with energies of lowest unoccupied molecular orbitals (LUMOs). Third, we extended this relationship to other aromatic nitrogen-containing molecules (40 molecules) including pyrazine, phenazine, and bipyridine derivatives. These simple descriptors may be used in high-throughput computational screening of thousands of organic molecules to down select candidates with promising reduction properties for RFB application.</p>
+
+<h2 id="sect295"><span class="a_heading">2. Methods</span></h2>
+<h3 id="sect298"><span class="b_heading">2.1 Computational details</span></h3>
+<span>All calculations presented in the paper are performed using the Gaussian 09 software.<a title="Select to navigate to references" href="#cit34"><sup><span class="sup_ref">34</span></sup></a> The B3LYP/6-31+G(d) level of theory is used to compute the structure and energetics of all species in the gas phase. The same level of theory was used to calculate zero point energies, free energy corrections (298 K, 1 atm pressure) and solvation energies. The SMD<a title="Select to navigate to references" href="#cit35"><sup><span class="sup_ref">35</span></sup></a> model was used to compute the solvation free energy by a single point energy calculation on the gas-phase optimized geometry using water as the dielectric medium.<a title="Select to navigate to references" href="#cit35"><sup><span class="sup_ref">35</span></sup></a> We find that this is an effective approximation for computing free energies of redox active species in solution, and this level of theory is reasonably accurate for the computation of reduction potentials (see Table S1A of the ESI<a title="Select to navigate to footnote" href="#fn1">†</a> for the benchmarking of the accuracy of density functional methods). We have optimized selected systems using the SMD solvent (water dielectric medium) model to include the solvation effects in determining the geometry and energy. For this study, changing the dielectric medium to acetone, dimethyl sulfoxide, or methanol did not significantly impact the computed redox potentials of quinoxaline derivatives (see Table S1B of the ESI<a title="Select to navigate to footnote" href="#fn1">†</a>). The Gibbs free energy of molecule ‘M’ in the solution is computed as the sum of the free energy in the gas phase (<span class="italic">G</span><small><sub>gas</sub></small>) and the solvation free energy (Δ<span class="italic">G</span><small><sub>solv</sub></small>).</span>
+<p class="otherpara">Using the thermodynamic cycle shown <a title="Select to navigate to scheme" href="#imgsch1">Scheme 1</a>, solution-phase free energy change for reduction or oxidation process (Δ<span class="italic">G</span><small><sub>redox</sub></small>) can be computed as:<table><td class="leftEqn"> </td><tr><td class="eqn"><span id="eqn1"/>
+<span id="eqn1">Δ<span class="italic">G</span><small><sub>redox</sub></small> = Δ<span class="italic">G</span><small><sub>gas</sub></small> + ΔΔ<span class="italic">G</span><small><sub>solv</sub></small></span>
+</td><td class="rightEqn">(1)</td></tr></table>where ΔΔ<span class="italic">G</span> is:<table><td class="leftEqn"> </td><tr><td class="eqn"><span id="eqn2"/>
+<span id="eqn2">ΔΔ<span class="italic">G</span> = Δ<span class="italic">G</span><small><sub>solv</sub></small>(M<small><sup>−</sup></small>) − Δ<span class="italic">G</span><small><sub>solv</sub></small>(M)</span>
+</td><td class="rightEqn">(2)</td></tr></table>where the change in energy of electrons when going from vacuum to non-aqueous solution (e<small><sup>−</sup></small><small><sub>(gas)</sub></small> → e<small><sup>−</sup></small><small><sub>(solv)</sub></small>) is approximated as zero since it is negligibly small (0.03 eV (<a title="Select to navigate to references" href="#cit36">ref. 36</a>)), similar to recent studies.<a title="Select to navigate to reference" href="#cit37"><sup><span class="sup_ref">37,38</span></sup></a> From the Gibbs free energy (Δ<span class="italic">G</span><small><sub>redox</sub></small>), the redox potential with respect to Li/Li<small><sup>+</sup></small> (<span class="italic">E</span><small><sup>V</sup></small><small><sub>redox</sub></small>) can be calculated using the following equation:<table><td class="leftEqn"> </td><tr><td class="eqn"><span id="eqn3"/>
+<a href="/image/article/2014/RA/c4ra08563a/c4ra08563a-t1_hi-res.gif" title="Select to open image in new window" onclick="open(this.href, &#34;_blank&#34;, &#34;toolbar=1,scrollbars=yes,resizable=1&#34;); return false;"><img alt="image file: c4ra08563a-t1.tif" src="/image/article/2014/RA/c4ra08563a/c4ra08563a-t1.gif"/></a></td><td class="rightEqn">(3)</td></tr></table>where <span class="italic">n</span> is the number of electrons involved in the redox reaction and <span class="italic">F</span> is the Faraday constant. The constant ‘−1.24 V’ represents the difference between the standard hydrogen electrode (SHE, −4.28 V (<a title="Select to navigate to references" href="#cit39">ref. 39</a>)) and Li/Li<small><sup>+</sup></small> redox couple (−3.04 V) and is required to convert the free energy changes to reduction potential with respect to Li/Li<small><sup>+</sup></small> reference electrode, a commonly used experimental convention.<a title="Select to navigate to reference" href="#cit38"><sup><span class="sup_ref">38,40,41</span></sup></a> Further details regarding the computation of redox potential can be found elsewhere.<a title="Select to navigate to reference" href="#cit28"><sup><span class="sup_ref">28,36,37,42–48</span></sup></a></p>
+<br/><div class="image_table"><table><tr><td colspan="3" class="imgHolder" id="imgsch1"><a href="/image/article/2014/RA/c4ra08563a/c4ra08563a-s1_hi-res.gif" title="Select to open image in new window" onclick="open(this.href, &#34;_blank&#34;, &#34;toolbar=1,scrollbars=yes,resizable=1&#34;); return false;"><img alt="image file: c4ra08563a-s1.tif" src="/image/article/2014/RA/c4ra08563a/c4ra08563a-s1.gif"/></a></td></tr><tr><td class="pushTitleRight"> </td><td class="image_title"><b>Scheme 1 </b> <span id="sch1"><span class="graphic_title">Thermodynamic cycle involved in the reduction process of molecule M.</span></span></td><td class="pushTitleLeft"> </td></tr></table></div>
+<p class="otherpara">Additionally it should be noted that the binding of a second electron to the mono-anion in the gas phase is thermodynamically uphill (negative electron affinity), while inclusion of solvation contributions favors the binding of the second electron. The negative electron affinities result in less accurate reduction potential, but in cases where experimental values are available agreement is reasonable. It has been found that finite basis sets can give reasonable results in comparison to gas-phase experimental results for gas-phase temporary anions with negative electron affinities due to a cancellation of errors.<a title="Select to navigate to references" href="#cit49"><sup><span class="sup_ref">49</span></sup></a> In general, quantum chemical calculations can be used to compute the redox potentials of a material of interest with reasonable accuracy.<a title="Select to navigate to reference" href="#cit28"><sup><span class="sup_ref">28,48,50,51</span></sup></a></p>
+
+
+<h2 id="sect362"><span class="a_heading">3. Results and discussion</span></h2>
+<h3 id="sect365"><span class="b_heading">3.1 The impact of substituent groups on calculated redox potentials and specific energy</span></h3>
+<span>As quinoxalines are predominantly under investigation for negative active species, our focus will be to determine how to most effectively lower the reduction potential without significantly increasing the molecular weight (thus lowering the charge storage capacity). <a title="Select to navigate to figure" href="#imgfig1">Fig. 1</a> shows the computed highest occupied molecular orbital (HOMO) and LUMO for unsubstituted quinoxaline. The HOMO is located in the benzene ring, while the LUMO is located in the pyrazine ring of the quinoxaline. Note that the computed oxidation potential of unsubstituted quinoxaline is 5.26 V due to the stability of HOMO orbital, consistent with the oxidative stability of benzene. From the computed LUMO of quinoxaline, it is clear that the nitrogen-containing ring is responsible for the electron affinity of quinoxaline and, therefore, the reduction potential of quinoxaline and its derivatives can be most effectively altered by substitution on this ring.</span>
+<br/><div class="image_table"><table><tr><td colspan="3" class="imgHolder" id="imgfig1"><a href="/image/article/2014/RA/c4ra08563a/c4ra08563a-f1_hi-res.gif" title="Select to open image in new window" onclick="open(this.href, &#34;_blank&#34;, &#34;toolbar=1,scrollbars=yes,resizable=1&#34;); return false;"><img alt="image file: c4ra08563a-f1.tif" src="/image/article/2014/RA/c4ra08563a/c4ra08563a-f1.gif"/></a></td></tr><tr><td class="pushTitleRight"> </td><td class="image_title"><b>Fig. 1 </b> <span id="fig1"><span class="graphic_title">Computed molecular orbitals HOMO and LUMO of quinoxaline.</span></span></td><td class="pushTitleLeft"> </td></tr></table></div>
+<p class="otherpara">To explore the effect of substitutions on reduction potential, oxidation potential, and specific energy (normalized to a common reference), 40 quinoxaline derivatives are investigated (<a title="Select to navigate to figure" href="#imgfig2">Fig. 2</a>).</p>
+<br/><div class="image_table"><table><tr><td colspan="3" class="imgHolder" id="imgfig2"><a href="/image/article/2014/RA/c4ra08563a/c4ra08563a-f2_hi-res.gif" title="Select to open image in new window" onclick="open(this.href, &#34;_blank&#34;, &#34;toolbar=1,scrollbars=yes,resizable=1&#34;); return false;"><img alt="image file: c4ra08563a-f2.tif" src="/image/article/2014/RA/c4ra08563a/c4ra08563a-f2.gif"/></a></td></tr><tr><td class="pushTitleRight"> </td><td class="image_title"><b>Fig. 2 </b> <span id="fig2"><span class="graphic_title">Selected quinoxaline derivatives, where entry 1 is unsubstituted quinoxaline.</span></span></td><td class="pushTitleLeft"> </td></tr></table></div>
+<p class="otherpara">The set of entries can be partitioned into the following substituent groups: alkyl groups (electron donating, entries 2–25), alkoxy groups (electron donating, entries 25–29), amino and hydroxyl groups (electron donating, entries 30–34), and phenyl, chloro, acetyl, and ester groups (electron withdrawing, entries 35–40). Based on the HOMO and LUMO characteristics of unsubstituted quinoxaline (<a title="Select to navigate to figure" href="#imgfig1">Fig. 1</a>), the introduction of electron-donating groups in the nitrogen ring increases the electron density and, hence, decreases the electron affinity and reduction potential. Where possible, the computed reduction potentials of quinoxaline derivatives are compared to experimentally obtained values to determine model accuracy and validate trends. It is important to note that, in this study, explicit effects of salts, impurities, concentration, and electrode materials are not considered, which may be significant for comparison with experiments.</p>
+<p class="otherpara">Ames <span class="italic">et al.</span> reported the quinoxaline reduction at −1.8 V <span class="italic">vs.</span> SCE (<span class="italic">ca.</span> 1.5 V <span class="italic">vs.</span> Li/Li<small><sup>+</sup></small>) in 0.1 M TEAP in dimethylformamide.<a title="Select to navigate to references" href="#cit52"><sup><span class="sup_ref">52</span></sup></a> Similarly, Barqawi and Atfah reported −1.62 V <span class="italic">vs.</span> SCE (<span class="italic">ca.</span> 1.7 V <span class="italic">vs.</span> Li/Li<small><sup>+</sup></small>) in 0.1 M TBAPF<small><sub>6</sub></small> in acetonitrile.<a title="Select to navigate to references" href="#cit53"><sup><span class="sup_ref">53</span></sup></a> The computed reduction potential of quinoxaline is 1.55 V <span class="italic">vs.</span> Li/Li<small><sup>+</sup></small> (<a title="Select to navigate to table" href="#tab1">Table 1</a>, entry 1) which is reasonably consistent with the experiments indicating the reliability of the computational methods used here. The computed potentials of alkyl-substituted quinoxalines (entries 2 to 25) clearly show a lowering in the reduction potentials. The most effective positions for methyl/alkyl substitutions are positions 2 and 3 of the quinoxaline. Among alkyl-substituted quinoxalines, entries 3, 11, 12, 13, 14 and 15 appear the most promising candidates in terms of the electrochemical window, with minimal substitutions (important for maximizing molecular capacity) compared to entries 16, 17, 21, 22, 23, 24. From quinoxaline (entry 1) to 2,3,5,6,7,8-hexamethylquinoxaline (entry 25), a decrease of reduction potential by 0.41 V for the first reduction event is computed, which is the maximum decrease computed for alkyl substitutions among our data set. The computed potential in the second electron transfer process of that same species 25 is 0.51 V less than that of quinoxaline. However, concomitant with the decrease in reduction potential is a decrease in the oxidative stability of almost 1 V as compared to quinoxaline (5.26 V). This may be acceptable as the negative electrolyte would not be expected to reach those potentials. The introduction of alkoxy groups (entries 27 to 29) in either position 2 or 3 of quinoxaline shows less impact on redox potentials as compared to alkyl groups. Further, the introduction of other electron-donating groups such as amino (entries 30 and 32) or dimethylamino groups (entries 31 and 33) also results in a decrease of the redox potential, albeit less effective than the addition of alkyl groups.</p>
+
+<div class="table_caption"><b>Table 1</b> <span id="tab1">Computed LUMO energies (eV), first electron reduction (Δ<span class="italic">E</span><small><sup>Red1</sup></small>), second electron reduction (Δ<span class="italic">E</span><small><sup>Red2</sup></small>), and first oxidation (Δ<span class="italic">E</span><small><sup>Ox1</sup></small>) potentials, predicted reduction potentials and error function of quinoxaline derivatives (entries 1 to 40, shown in <a title="Select to navigate to figure" href="#imgfig2">Fig. 2</a>). The reduction/oxidation potentials are computed at the B3LYP/6-31+G(d) level of theory. Negative of LUMO energies is tabulated as the electron affinity (EA). Italicized values in parentheses are from previous experimental studies</span>
+		</div>
+
+<div class="rtable__wrapper"><div class="rtable__inner"><table class="tgroup rtable" border="0"><colgroup><col/><col/><col/><col/><col/><col/><col/></colgroup>
+
+
+
+
+
+
+
+<thead align="left">
+<tr align="left" valign="bottom">
+<th rowspan="3" align="left" valign="bottom" class="border_black">Entries (as shown in <a title="Select to navigate to figure" href="#imgfig2">Fig. 2</a>)</th>
+<th align="left" valign="bottom" class="border_black">Electron affinity</th>
+<th colspan="5" align="left" valign="bottom" class="border_black">Potential <span class="italic">vs.</span> Li/Li<small><sup>+</sup></small> (V)</th>
+</tr>
+<tr align="left" valign="bottom">
+<th align="left" valign="bottom" class="border_black">(−ve of LUMO)</th>
+<th colspan="3" align="left" valign="bottom" class="border_black"><span class="italic">E</span><small><sup>Red1</sup></small> computed from <a title="" href="#eqn3">eqn (3)</a></th>
+<th align="left" valign="bottom" class="border_black">Predicted reduction potential = (0.69 × EA)<i><small><sup style="color: red;"><a title="" href="#tab1fna">a</a></sup></small></i></th>
+<th align="left" valign="bottom" class="border_black">Error function<i><small><sup style="color: red;"><a title="" href="#tab1fna">a</a></sup></small></i></th>
+</tr>
+<tr align="left" valign="bottom">
+<th align="left" valign="bottom" class="border_black">EA (eV)</th>
+<th align="left" valign="bottom" class="border_black"><span class="italic">E</span><small><sup>Red1</sup></small></th>
+<th align="left" valign="bottom" class="border_black"><span class="italic">E</span><small><sup>Red2</sup></small></th>
+<th align="left" valign="bottom" class="border_black"><span class="italic">E</span><small><sup>Ox1</sup></small></th>
+<th align="left" valign="bottom" class="border_black">*<span class="italic">E</span><small><sup>Red1</sup></small></th>
+<th align="left" valign="bottom" class="border_black">δ<span class="italic">E</span> = (*<span class="italic">E</span><small><sup>Red1</sup></small> − <span class="italic">E</span><small><sup>Red1</sup></small>)</th>
+</tr>
+</thead>
+<tfoot align="left">
+<tr align="left">
+<th colspan="7"><a id="tab1fna"><span class="tfootnote">a</span></a> <span class="sup_inf">Details of predicted first reduction potentials and error function are shown in Section 3.2.</span></th>
+</tr>
+</tfoot>
+<tbody align="left">
+<tr align="left">
+<td valign="top">1</td>
+<td align="char" char="." valign="top">2.29</td>
+<td valign="top">1.55 (<span class="italic">1.52</span> (<a title="Select to navigate to references" href="#cit52">ref. 52</a>))</td>
+<td align="char" char="." valign="top">1.00</td>
+<td align="char" char="." valign="top">5.26</td>
+<td align="char" char="." valign="top">1.58</td>
+<td align="char" char="." valign="top">0.03</td>
+</tr>
+<tr align="left">
+<td valign="top">2</td>
+<td align="char" char="." valign="top">2.10</td>
+<td valign="top">1.44</td>
+<td align="char" char="." valign="top">0.89</td>
+<td align="char" char="." valign="top">5.14</td>
+<td align="char" char="." valign="top">1.45</td>
+<td align="char" char="." valign="top">0.01</td>
+</tr>
+<tr align="left">
+<td valign="top">3</td>
+<td align="char" char="." valign="top">1.94</td>
+<td valign="top">1.34 (<span class="italic">1.45</span> (<a title="Select to navigate to references" href="#cit52">ref. 52</a>))</td>
+<td align="char" char="." valign="top">0.83</td>
+<td align="char" char="." valign="top">5.06</td>
+<td align="char" char="." valign="top">1.34</td>
+<td align="char" char="." valign="top">0.00</td>
+</tr>
+<tr align="left">
+<td valign="top">4</td>
+<td align="char" char="." valign="top">2.21</td>
+<td valign="top">1.49</td>
+<td align="char" char="." valign="top">0.91</td>
+<td align="char" char="." valign="top">4.90</td>
+<td align="char" char="." valign="top">1.53</td>
+<td align="char" char="." valign="top">0.04</td>
+</tr>
+<tr align="left">
+<td valign="top">5</td>
+<td align="char" char="." valign="top">2.21</td>
+<td valign="top">1.53</td>
+<td align="char" char="." valign="top">0.89</td>
+<td align="char" char="." valign="top">4.97</td>
+<td align="char" char="." valign="top">1.53</td>
+<td align="char" char="." valign="top">0.00</td>
+</tr>
+<tr align="left">
+<td valign="top">6</td>
+<td align="char" char="." valign="top">2.10</td>
+<td valign="top">1.44</td>
+<td align="char" char="." valign="top">0.85</td>
+<td align="char" char="." valign="top">4.74</td>
+<td align="char" char="." valign="top">1.45</td>
+<td align="char" char="." valign="top">0.01</td>
+</tr>
+<tr align="left">
+<td valign="top">7</td>
+<td align="char" char="." valign="top">2.15</td>
+<td valign="top">1.44</td>
+<td align="char" char="." valign="top">0.93</td>
+<td align="char" char="." valign="top">4.63</td>
+<td align="char" char="." valign="top">1.48</td>
+<td align="char" char="." valign="top">0.04</td>
+</tr>
+<tr align="left">
+<td valign="top">8</td>
+<td align="char" char="." valign="top">2.12</td>
+<td valign="top">1.43</td>
+<td align="char" char="." valign="top">0.84</td>
+<td align="char" char="." valign="top">4.71</td>
+<td align="char" char="." valign="top">1.46</td>
+<td align="char" char="." valign="top">0.03</td>
+</tr>
+<tr align="left">
+<td valign="top">9</td>
+<td align="char" char="." valign="top">2.08</td>
+<td valign="top">1.45</td>
+<td align="char" char="." valign="top">0.81</td>
+<td align="char" char="." valign="top">4.89</td>
+<td align="char" char="." valign="top">1.44</td>
+<td align="char" char="." valign="top">−0.01</td>
+</tr>
+<tr align="left">
+<td valign="top">10</td>
+<td align="char" char="." valign="top">2.14</td>
+<td valign="top">1.48</td>
+<td align="char" char="." valign="top">0.88</td>
+<td align="char" char="." valign="top">4.70</td>
+<td align="char" char="." valign="top">1.48</td>
+<td align="char" char="." valign="top">0.00</td>
+</tr>
+<tr align="left">
+<td valign="top">11</td>
+<td align="char" char="." valign="top">2.08</td>
+<td valign="top">1.36</td>
+<td align="char" char="." valign="top">0.85</td>
+<td align="char" char="." valign="top">5.06</td>
+<td align="char" char="." valign="top">1.44</td>
+<td align="char" char="." valign="top">0.08</td>
+</tr>
+<tr align="left">
+<td valign="top">12</td>
+<td align="char" char="." valign="top">1.84</td>
+<td valign="top">1.3</td>
+<td align="char" char="." valign="top">0.77</td>
+<td align="char" char="." valign="top">4.86</td>
+<td align="char" char="." valign="top">1.27</td>
+<td align="char" char="." valign="top">−0.03</td>
+</tr>
+<tr align="left">
+<td valign="top">13</td>
+<td align="char" char="." valign="top">1.89</td>
+<td valign="top">1.29</td>
+<td align="char" char="." valign="top">0.73</td>
+<td align="char" char="." valign="top">4.76</td>
+<td align="char" char="." valign="top">1.30</td>
+<td align="char" char="." valign="top">0.01</td>
+</tr>
+<tr align="left">
+<td valign="top">14</td>
+<td align="char" char="." valign="top">1.98</td>
+<td valign="top">1.33</td>
+<td align="char" char="." valign="top">0.76</td>
+<td align="char" char="." valign="top">4.91</td>
+<td align="char" char="." valign="top">1.37</td>
+<td align="char" char="." valign="top">0.04</td>
+</tr>
+<tr align="left">
+<td valign="top">15</td>
+<td align="char" char="." valign="top">2.05</td>
+<td valign="top">1.31</td>
+<td align="char" char="." valign="top">0.85</td>
+<td align="char" char="." valign="top">5.03</td>
+<td align="char" char="." valign="top">1.42</td>
+<td align="char" char="." valign="top">0.11</td>
+</tr>
+<tr align="left">
+<td valign="top">16</td>
+<td align="char" char="." valign="top">1.92</td>
+<td valign="top">1.25</td>
+<td align="char" char="." valign="top">0.69</td>
+<td align="char" char="." valign="top">4.66</td>
+<td align="char" char="." valign="top">1.32</td>
+<td align="char" char="." valign="top">0.07</td>
+</tr>
+<tr align="left">
+<td valign="top">17</td>
+<td align="char" char="." valign="top">1.82</td>
+<td valign="top">1.18</td>
+<td align="char" char="." valign="top">0.63</td>
+<td align="char" char="." valign="top">4.57</td>
+<td align="char" char="." valign="top">1.25</td>
+<td align="char" char="." valign="top">0.07</td>
+</tr>
+<tr align="left">
+<td valign="top">18</td>
+<td align="char" char="." valign="top">1.95</td>
+<td valign="top">1.36</td>
+<td align="char" char="." valign="top">0.74</td>
+<td align="char" char="." valign="top">5.01</td>
+<td align="char" char="." valign="top">1.35</td>
+<td align="char" char="." valign="top">−0.01</td>
+</tr>
+<tr align="left">
+<td valign="top">19</td>
+<td align="char" char="." valign="top">1.90</td>
+<td valign="top">1.24</td>
+<td align="char" char="." valign="top">0.67</td>
+<td align="char" char="." valign="top">4.91</td>
+<td align="char" char="." valign="top">1.31</td>
+<td align="char" char="." valign="top">0.07</td>
+</tr>
+<tr align="left">
+<td valign="top">20</td>
+<td align="char" char="." valign="top">1.89</td>
+<td valign="top">1.31</td>
+<td align="char" char="." valign="top">0.75</td>
+<td align="char" char="." valign="top">4.83</td>
+<td align="char" char="." valign="top">1.31</td>
+<td align="char" char="." valign="top">0.00</td>
+</tr>
+<tr align="left">
+<td valign="top">21</td>
+<td align="char" char="." valign="top">1.79</td>
+<td valign="top">1.25</td>
+<td align="char" char="." valign="top">0.69</td>
+<td align="char" char="." valign="top">4.77</td>
+<td align="char" char="." valign="top">1.24</td>
+<td align="char" char="." valign="top">−0.01</td>
+</tr>
+<tr align="left">
+<td valign="top">22</td>
+<td align="char" char="." valign="top">1.83</td>
+<td valign="top">1.21</td>
+<td align="char" char="." valign="top">0.66</td>
+<td align="char" char="." valign="top">4.79</td>
+<td align="char" char="." valign="top">1.26</td>
+<td align="char" char="." valign="top">0.05</td>
+</tr>
+<tr align="left">
+<td valign="top">23</td>
+<td align="char" char="." valign="top">1.86</td>
+<td valign="top">1.2</td>
+<td align="char" char="." valign="top">0.66</td>
+<td align="char" char="." valign="top">4.69</td>
+<td align="char" char="." valign="top">1.28</td>
+<td align="char" char="." valign="top">0.08</td>
+</tr>
+<tr align="left">
+<td valign="top">24</td>
+<td align="char" char="." valign="top">1.87</td>
+<td valign="top">1.19</td>
+<td align="char" char="." valign="top">0.63</td>
+<td align="char" char="." valign="top">4.69</td>
+<td align="char" char="." valign="top">1.29</td>
+<td align="char" char="." valign="top">0.10</td>
+</tr>
+<tr align="left">
+<td valign="top">25</td>
+<td align="char" char="." valign="top">1.64</td>
+<td valign="top">1.14</td>
+<td align="char" char="." valign="top">0.49</td>
+<td align="char" char="." valign="top">4.27</td>
+<td align="char" char="." valign="top">1.13</td>
+<td align="char" char="." valign="top">−0.01</td>
+</tr>
+<tr align="left">
+<td valign="top">26</td>
+<td align="char" char="." valign="top">2.00</td>
+<td valign="top">1.36</td>
+<td align="char" char="." valign="top">0.86</td>
+<td align="char" char="." valign="top">5.06</td>
+<td align="char" char="." valign="top">1.38</td>
+<td align="char" char="." valign="top">0.02</td>
+</tr>
+<tr align="left">
+<td valign="top">27</td>
+<td align="char" char="." valign="top">1.83</td>
+<td valign="top">1.46</td>
+<td align="char" char="." valign="top">0.87</td>
+<td align="char" char="." valign="top">4.73</td>
+<td align="char" char="." valign="top">1.27</td>
+<td align="char" char="." valign="top">−0.19</td>
+</tr>
+<tr align="left">
+<td valign="top">28</td>
+<td align="char" char="." valign="top">2.10</td>
+<td valign="top">1.43</td>
+<td align="char" char="." valign="top">0.89</td>
+<td align="char" char="." valign="top">5.15</td>
+<td align="char" char="." valign="top">1.45</td>
+<td align="char" char="." valign="top">0.02</td>
+</tr>
+<tr align="left">
+<td valign="top">29</td>
+<td align="char" char="." valign="top">1.98</td>
+<td valign="top">1.65</td>
+<td align="char" char="." valign="top">0.93</td>
+<td align="char" char="." valign="top">5.16</td>
+<td align="char" char="." valign="top">1.36</td>
+<td align="char" char="." valign="top">−0.29</td>
+</tr>
+<tr align="left">
+<td valign="top">30</td>
+<td align="char" char="." valign="top">1.91</td>
+<td valign="top">1.28</td>
+<td align="char" char="." valign="top">0.75</td>
+<td align="char" char="." valign="top">4.40</td>
+<td align="char" char="." valign="top">1.32</td>
+<td align="char" char="." valign="top">0.04</td>
+</tr>
+<tr align="left">
+<td valign="top">31</td>
+<td align="char" char="." valign="top">1.79</td>
+<td valign="top">1.24</td>
+<td align="char" char="." valign="top">0.75</td>
+<td align="char" char="." valign="top">4.06</td>
+<td align="char" char="." valign="top">1.23</td>
+<td align="char" char="." valign="top">−0.01</td>
+</tr>
+<tr align="left">
+<td valign="top">32</td>
+<td align="char" char="." valign="top">1.58</td>
+<td valign="top">1.03</td>
+<td align="char" char="." valign="top">0.59</td>
+<td align="char" char="." valign="top">4.06</td>
+<td align="char" char="." valign="top">1.09</td>
+<td align="char" char="." valign="top">0.06</td>
+</tr>
+<tr align="left">
+<td valign="top">33</td>
+<td align="char" char="." valign="top">1.52</td>
+<td valign="top">1.18</td>
+<td align="char" char="." valign="top">0.63</td>
+<td align="char" char="." valign="top">4.57</td>
+<td align="char" char="." valign="top">1.05</td>
+<td align="char" char="." valign="top">−0.13</td>
+</tr>
+<tr align="left">
+<td valign="top">34</td>
+<td align="char" char="." valign="top">1.96</td>
+<td valign="top">1.31</td>
+<td align="char" char="." valign="top">0.77</td>
+<td align="char" char="." valign="top">4.96</td>
+<td align="char" char="." valign="top">1.35</td>
+<td align="char" char="." valign="top">0.04</td>
+</tr>
+<tr align="left">
+<td valign="top">35</td>
+<td align="char" char="." valign="top">2.23</td>
+<td valign="top">1.55 (<span class="italic">1.77</span> (<a title="Select to navigate to references" href="#cit52">ref. 52</a>))</td>
+<td align="char" char="." valign="top">1.09</td>
+<td align="char" char="." valign="top">4.73</td>
+<td align="char" char="." valign="top">1.54</td>
+<td align="char" char="." valign="top">−0.01</td>
+</tr>
+<tr align="left">
+<td valign="top">36</td>
+<td align="char" char="." valign="top">2.70</td>
+<td valign="top">1.78</td>
+<td align="char" char="." valign="top">1.35</td>
+<td align="char" char="." valign="top">5.58</td>
+<td align="char" char="." valign="top">1.86</td>
+<td align="char" char="." valign="top">0.08</td>
+</tr>
+<tr align="left">
+<td valign="top">37</td>
+<td align="char" char="." valign="top">2.82</td>
+<td valign="top">2.08</td>
+<td align="char" char="." valign="top">1.62</td>
+<td align="char" char="." valign="top">5.48</td>
+<td align="char" char="." valign="top">1.95</td>
+<td align="char" char="." valign="top">−0.13</td>
+</tr>
+<tr align="left">
+<td valign="top">38</td>
+<td align="char" char="." valign="top">2.68</td>
+<td valign="top">2.01</td>
+<td align="char" char="." valign="top">1.53</td>
+<td align="char" char="." valign="top">5.46</td>
+<td align="char" char="." valign="top">1.85</td>
+<td align="char" char="." valign="top">−0.16</td>
+</tr>
+<tr align="left">
+<td valign="top">39</td>
+<td align="char" char="." valign="top">2.65</td>
+<td valign="top">2.15</td>
+<td align="char" char="." valign="top">1.67</td>
+<td align="char" char="." valign="top">5.61</td>
+<td align="char" char="." valign="top">1.83</td>
+<td align="char" char="." valign="top">−0.32</td>
+</tr>
+<tr align="left">
+<td valign="top">40</td>
+<td align="char" char="." valign="top">2.82</td>
+<td valign="top">2.07</td>
+<td align="char" char="." valign="top">1.60</td>
+<td align="char" char="." valign="top">5.29</td>
+<td align="char" char="." valign="top">1.95</td>
+<td align="char" char="." valign="top">−0.12</td>
+</tr>
+</tbody>
+</table></div></div>
+<hr class="hrule"/><br/>
+<p class="otherpara">Electron-withdrawing groups increase the electron affinity and hence increase the redox potential (entries 36 to 40). For instance, the computed reduction potential of 2,3-dicholoroquinoxaline (entry 36) is 0.23 V higher than that of unsubstituted quinoxaline. Similarly, functional groups such as carboxyl (entry 37), ester (entries 38 and 39), and acetoxy (entry 40) increase the reduction potential by ∼0.5 V for both the first and second electron reduction process. Note that chloro-substituted quinoxaline (entry 36) is not stable upon the second reduction, where detachment of C–Cl bond occurs. The C–Cl bond length increases from 1.75 Å (neutral) to 1.79 Å (singly reduced) and subsequently to 1.96 Å (doubly reduced) suggesting that decomposition is likely during the reduction process. For substituents that contain C<img class="charmap" src="https://www-rsc-org.ezproxy.uky.edu/images/entities/char_e001.gif" alt="[double bond, length as m-dash]"/>O group (acetyl group), major structural changes occur in the C<img class="charmap" src="https://www-rsc-org.ezproxy.uky.edu/images/entities/char_e001.gif" alt="[double bond, length as m-dash]"/>O group rather than the quinoxaline ring resulting in different redox characteristics from the quinoxaline or its methylated counterparts.</p>
+<p class="otherpara">Using 4 V <span class="italic">vs.</span> Li/Li<small><sup>+</sup></small> as a common reference point (redox potential of DBBB-based positive electrolyte), a high-level specific energy calculation was performed for each of the 40 quinoxaline derivatives and then normalized to unsubstituted quinoxaline (Q, entry 1 in <a title="Select to navigate to table" href="#tab2">Table 2</a>). For this particular data set, none of the voltage changes offset the increase in molecular weight, meaning that the specific energy of all the substituted quinoxaline derivatives was lower than that of the unsubstituted quinoxaline. However, it is important to note that these candidates represent only a small subset of the possible quinoxaline derivatives and that the addition of substituent groups can impart other favorable properties (<span class="italic">e.g.</span>, solubility, diffusivity, viscosity) beyond modifying reduction potential.</p>
+
+<div class="table_caption"><b>Table 2</b> <span id="tab2">Computed specific energies of quinoxaline derivatives (entries 1 to 40, shown in <a title="Select to navigate to figure" href="#imgfig2">Fig. 2</a>) normalized against unsubstituted quinoxaline (Q) are shown. Using DBBB-based positive electrolyte (<span class="italic">ca.</span> 4 V <span class="italic">vs.</span> Li/Li<small><sup>+</sup></small>) as a reference point, the change in specific energy for each derivative is calculated and normalized to quinoxaline</span>
+		</div>
+
+<div class="rtable__wrapper"><div class="rtable__inner"><table class="tgroup rtable" border="0"><colgroup><col/><col/><col/><col/><col/><col/><col/></colgroup>
+
+
+
+
+
+
+
+<thead align="left">
+<tr align="left" valign="bottom">
+<th rowspan="3" align="left" valign="bottom" class="border_black">Entries</th>
+<th colspan="6" align="left" valign="bottom" class="border_black">Specific energy evaluation</th>
+</tr>
+<tr align="left" valign="bottom">
+<th align="left" valign="bottom" class="border_black">Molecular weight</th>
+<th align="left" valign="bottom" class="border_black">Number of electrons</th>
+<th align="left" valign="bottom" class="border_black">Mol. cap. = MC (A h kg<small><sup>−1</sup></small>)</th>
+<th align="left" valign="bottom" class="border_black">Average redox voltage (V)</th>
+<th align="left" valign="bottom" class="border_black">Specific energy (SE) (<span class="italic">vs.</span> DBBB) (W h kg<small><sup>−1</sup></small>)</th>
+<th align="left" valign="bottom" class="border_black">Normalized specific energy <span class="italic">vs.</span> quinoxaline (Q)</th>
+</tr>
+<tr align="left" valign="bottom">
+<th align="left" valign="bottom" class="border_black">MW (g mol<small><sup>−1</sup></small>)</th>
+<th align="left" valign="bottom" class="border_black"><span class="italic">n</span></th>
+<th align="left" valign="bottom" class="border_black">MC = <span class="italic">nF</span>/(3.6 × MW)</th>
+<th align="left" valign="bottom" class="border_black"><span class="italic">V</span> = (<span class="italic">E</span><small><sup>Red1</sup></small> + <span class="italic">E</span><small><sup>Red2</sup></small>)/<span class="italic">n</span></th>
+<th align="left" valign="bottom" class="border_black">SE = MC(4 − <span class="italic">V</span>)</th>
+<th align="left" valign="bottom" class="border_black">SE[i]/SE[Q]</th>
+</tr>
+</thead>
+<tbody align="left">
+<tr align="left">
+<td valign="top">1 (Q)</td>
+<td align="char" char="." valign="top">130.15</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">411.86</td>
+<td align="char" char="." valign="top">1.28</td>
+<td align="char" char="." valign="top">1122.31</td>
+<td align="char" char="." valign="top">1.00</td>
+</tr>
+<tr align="left">
+<td valign="top">2</td>
+<td align="char" char="." valign="top">144.17</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">371.80</td>
+<td align="char" char="." valign="top">1.17</td>
+<td align="char" char="." valign="top">1054.06</td>
+<td align="char" char="." valign="top">0.94</td>
+</tr>
+<tr align="left">
+<td valign="top">3</td>
+<td align="char" char="." valign="top">158.2</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">338.83</td>
+<td align="char" char="." valign="top">1.09</td>
+<td align="char" char="." valign="top">987.69</td>
+<td align="char" char="." valign="top">0.88</td>
+</tr>
+<tr align="left">
+<td valign="top">4</td>
+<td align="char" char="." valign="top">144.17</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">371.80</td>
+<td align="char" char="." valign="top">1.20</td>
+<td align="char" char="." valign="top">1041.05</td>
+<td align="char" char="." valign="top">0.93</td>
+</tr>
+<tr align="left">
+<td valign="top">5</td>
+<td align="char" char="." valign="top">144.17</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">371.80</td>
+<td align="char" char="." valign="top">1.21</td>
+<td align="char" char="." valign="top">1037.33</td>
+<td align="char" char="." valign="top">0.92</td>
+</tr>
+<tr align="left">
+<td valign="top">6</td>
+<td align="char" char="." valign="top">158.2</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">338.83</td>
+<td align="char" char="." valign="top">1.15</td>
+<td align="char" char="." valign="top">967.36</td>
+<td align="char" char="." valign="top">0.86</td>
+</tr>
+<tr align="left">
+<td valign="top">7</td>
+<td align="char" char="." valign="top">158.2</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">338.83</td>
+<td align="char" char="." valign="top">1.19</td>
+<td align="char" char="." valign="top">953.81</td>
+<td align="char" char="." valign="top">0.85</td>
+</tr>
+<tr align="left">
+<td valign="top">8</td>
+<td align="char" char="." valign="top">158.2</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">338.83</td>
+<td align="char" char="." valign="top">1.14</td>
+<td align="char" char="." valign="top">970.75</td>
+<td align="char" char="." valign="top">0.86</td>
+</tr>
+<tr align="left">
+<td valign="top">9</td>
+<td align="char" char="." valign="top">158.2</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">338.83</td>
+<td align="char" char="." valign="top">1.13</td>
+<td align="char" char="." valign="top">972.44</td>
+<td align="char" char="." valign="top">0.87</td>
+</tr>
+<tr align="left">
+<td valign="top">10</td>
+<td align="char" char="." valign="top">158.2</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">338.83</td>
+<td align="char" char="." valign="top">1.18</td>
+<td align="char" char="." valign="top">955.50</td>
+<td align="char" char="." valign="top">0.85</td>
+</tr>
+<tr align="left">
+<td valign="top">11</td>
+<td align="char" char="." valign="top">172.33</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">311.05</td>
+<td align="char" char="." valign="top">1.12</td>
+<td align="char" char="." valign="top">895.82</td>
+<td align="char" char="." valign="top">0.80</td>
+</tr>
+<tr align="left">
+<td valign="top">12</td>
+<td align="char" char="." valign="top">172.33</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">311.05</td>
+<td align="char" char="." valign="top">1.04</td>
+<td align="char" char="." valign="top">922.26</td>
+<td align="char" char="." valign="top">0.82</td>
+</tr>
+<tr align="left">
+<td valign="top">13</td>
+<td align="char" char="." valign="top">172.33</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">311.05</td>
+<td align="char" char="." valign="top">1.01</td>
+<td align="char" char="." valign="top">930.03</td>
+<td align="char" char="." valign="top">0.83</td>
+</tr>
+<tr align="left">
+<td valign="top">14</td>
+<td align="char" char="." valign="top">214.31</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">250.12</td>
+<td align="char" char="." valign="top">1.05</td>
+<td align="char" char="." valign="top">739.10</td>
+<td align="char" char="." valign="top">0.66</td>
+</tr>
+<tr align="left">
+<td valign="top">15</td>
+<td align="char" char="." valign="top">186.25</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">287.80</td>
+<td align="char" char="." valign="top">1.04</td>
+<td align="char" char="." valign="top">851.89</td>
+<td align="char" char="." valign="top">0.76</td>
+</tr>
+<tr align="left">
+<td valign="top">16</td>
+<td align="char" char="." valign="top">242.36</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">221.17</td>
+<td align="char" char="." valign="top">0.97</td>
+<td align="char" char="." valign="top">670.15</td>
+<td align="char" char="." valign="top">0.60</td>
+</tr>
+<tr align="left">
+<td valign="top">17</td>
+<td align="char" char="." valign="top">256.39</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">209.07</td>
+<td align="char" char="." valign="top">0.91</td>
+<td align="char" char="." valign="top">647.07</td>
+<td align="char" char="." valign="top">0.58</td>
+</tr>
+<tr align="left">
+<td valign="top">18</td>
+<td align="char" char="." valign="top">184.24</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">290.94</td>
+<td align="char" char="." valign="top">1.05</td>
+<td align="char" char="." valign="top">858.28</td>
+<td align="char" char="." valign="top">0.76</td>
+</tr>
+<tr align="left">
+<td valign="top">19</td>
+<td align="char" char="." valign="top">212.29</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">252.50</td>
+<td align="char" char="." valign="top">0.94</td>
+<td align="char" char="." valign="top">772.65</td>
+<td align="char" char="." valign="top">0.69</td>
+</tr>
+<tr align="left">
+<td valign="top">20</td>
+<td align="char" char="." valign="top">214.31</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">250.12</td>
+<td align="char" char="." valign="top">1.03</td>
+<td align="char" char="." valign="top">742.85</td>
+<td align="char" char="." valign="top">0.66</td>
+</tr>
+<tr align="left">
+<td valign="top">21</td>
+<td align="char" char="." valign="top">228.33</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">234.76</td>
+<td align="char" char="." valign="top">0.97</td>
+<td align="char" char="." valign="top">711.33</td>
+<td align="char" char="." valign="top">0.63</td>
+</tr>
+<tr align="left">
+<td valign="top">22</td>
+<td align="char" char="." valign="top">242.26</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">221.26</td>
+<td align="char" char="." valign="top">0.94</td>
+<td align="char" char="." valign="top">678.17</td>
+<td align="char" char="." valign="top">0.60</td>
+</tr>
+<tr align="left">
+<td valign="top">23</td>
+<td align="char" char="." valign="top">256.39</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">209.07</td>
+<td align="char" char="." valign="top">0.93</td>
+<td align="char" char="." valign="top">641.84</td>
+<td align="char" char="." valign="top">0.57</td>
+</tr>
+<tr align="left">
+<td valign="top">24</td>
+<td align="char" char="." valign="top">270.41</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">198.23</td>
+<td align="char" char="." valign="top">0.91</td>
+<td align="char" char="." valign="top">612.53</td>
+<td align="char" char="." valign="top">0.55</td>
+</tr>
+<tr align="left">
+<td valign="top">25</td>
+<td align="char" char="." valign="top">214.31</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">250.12</td>
+<td align="char" char="." valign="top">0.82</td>
+<td align="char" char="." valign="top">796.63</td>
+<td align="char" char="." valign="top">0.71</td>
+</tr>
+<tr align="left">
+<td valign="top">26</td>
+<td align="char" char="." valign="top">160.17</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">334.66</td>
+<td align="char" char="." valign="top">1.11</td>
+<td align="char" char="." valign="top">967.18</td>
+<td align="char" char="." valign="top">0.86</td>
+</tr>
+<tr align="left">
+<td valign="top">27</td>
+<td align="char" char="." valign="top">190.2</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">281.82</td>
+<td align="char" char="." valign="top">1.17</td>
+<td align="char" char="." valign="top">798.97</td>
+<td align="char" char="." valign="top">0.71</td>
+</tr>
+<tr align="left">
+<td valign="top">28</td>
+<td align="char" char="." valign="top">145.14</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">369.32</td>
+<td align="char" char="." valign="top">1.16</td>
+<td align="char" char="." valign="top">1048.87</td>
+<td align="char" char="." valign="top">0.93</td>
+</tr>
+<tr align="left">
+<td valign="top">29</td>
+<td align="char" char="." valign="top">160.13</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">334.75</td>
+<td align="char" char="." valign="top">1.29</td>
+<td align="char" char="." valign="top">907.16</td>
+<td align="char" char="." valign="top">0.81</td>
+</tr>
+<tr align="left">
+<td valign="top">30</td>
+<td align="char" char="." valign="top">145.16</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">369.27</td>
+<td align="char" char="." valign="top">1.02</td>
+<td align="char" char="." valign="top">1102.27</td>
+<td align="char" char="." valign="top">0.98</td>
+</tr>
+<tr align="left">
+<td valign="top">31</td>
+<td align="char" char="." valign="top">173.21</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">309.47</td>
+<td align="char" char="." valign="top">1.00</td>
+<td align="char" char="." valign="top">929.95</td>
+<td align="char" char="." valign="top">0.83</td>
+</tr>
+<tr align="left">
+<td valign="top">32</td>
+<td align="char" char="." valign="top">160.18</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">334.64</td>
+<td align="char" char="." valign="top">0.81</td>
+<td align="char" char="." valign="top">1067.51</td>
+<td align="char" char="." valign="top">0.95</td>
+</tr>
+<tr align="left">
+<td valign="top">33</td>
+<td align="char" char="." valign="top">216.28</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">247.84</td>
+<td align="char" char="." valign="top">0.91</td>
+<td align="char" char="." valign="top">767.07</td>
+<td align="char" char="." valign="top">0.68</td>
+</tr>
+<tr align="left">
+<td valign="top">34</td>
+<td align="char" char="." valign="top">162.15</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">330.58</td>
+<td align="char" char="." valign="top">1.04</td>
+<td align="char" char="." valign="top">978.51</td>
+<td align="char" char="." valign="top">0.87</td>
+</tr>
+<tr align="left">
+<td valign="top">35</td>
+<td align="char" char="." valign="top">282.34</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">189.85</td>
+<td align="char" char="." valign="top">1.32</td>
+<td align="char" char="." valign="top">508.80</td>
+<td align="char" char="." valign="top">0.45</td>
+</tr>
+<tr align="left">
+<td valign="top">36</td>
+<td align="char" char="." valign="top">199.34</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">268.90</td>
+<td align="char" char="." valign="top">1.57</td>
+<td align="char" char="." valign="top">654.78</td>
+<td align="char" char="." valign="top">0.58</td>
+</tr>
+<tr align="left">
+<td valign="top">37</td>
+<td align="char" char="." valign="top">174.16</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">307.78</td>
+<td align="char" char="." valign="top">1.85</td>
+<td align="char" char="." valign="top">661.73</td>
+<td align="char" char="." valign="top">0.59</td>
+</tr>
+<tr align="left">
+<td valign="top">38</td>
+<td align="char" char="." valign="top">188.18</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">284.85</td>
+<td align="char" char="." valign="top">1.77</td>
+<td align="char" char="." valign="top">635.21</td>
+<td align="char" char="." valign="top">0.57</td>
+</tr>
+<tr align="left">
+<td valign="top">39</td>
+<td align="char" char="." valign="top">246.22</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">217.70</td>
+<td align="char" char="." valign="top">1.91</td>
+<td align="char" char="." valign="top">455.00</td>
+<td align="char" char="." valign="top">0.41</td>
+</tr>
+<tr align="left">
+<td valign="top">40</td>
+<td align="char" char="." valign="top">172.18</td>
+<td align="char" char="." valign="top">2</td>
+<td align="char" char="." valign="top">311.32</td>
+<td align="char" char="." valign="top">1.84</td>
+<td align="char" char="." valign="top">674.01</td>
+<td align="char" char="." valign="top">0.60</td>
+</tr>
+</tbody>
+</table></div></div>
+<hr class="hrule"/><br/>
+
+<h3 id="sect1155"><span class="b_heading">3.2 A descriptor for reduction potential evaluation for quinoxaline derivatives</span></h3>
+<span>Data presented in <a title="Select to navigate to table" href="#tab1">Table 1</a> represent a small fraction of the possible quinoxaline derivatives that may be utilized as charge storage species. However, though faster than manual synthesis and experimentation, mapping thousands of redox candidates <span class="italic">via</span> free energy calculations is time-consuming and limits throughput. Developing simple high-level descriptors to predict redox windows can significantly accelerate the innovation process. Indeed, similar approaches have been successfully employed for the high-throughput calculation of battery and photovoltaic materials.<a title="Select to navigate to reference" href="#cit13"><sup><span class="sup_ref">13,32,33</span></sup></a> Thus linking the reduction potential evaluation presented in the previous section to a larger set of quinoxaline derivatives requires simple descriptors to predict reduction potential. Using the first reduction potential data of quinoxaline derivatives (entries 1 to 40 shown in <a title="Select to navigate to table" href="#tab1">Table 1</a>), it is possible to derive a simple descriptor that enables the prediction of first reduction potentials of novel quinoxaline derivatives. According to the Nernst relation (<a title="" href="#eqn3">eqn (3)</a>), the computed reduction potential (<span class="italic">E</span><small><sup>red1</sup></small><small><sub><span class="italic">n</span></sub></small>) of a quinoxaline derivative <span class="italic">n</span> (denoted entry <span class="italic">n</span>) is directly proportional to the free energy change associated with the reduction process (Δ<span class="italic">G</span><small><sup>red1</sup></small><small><sub><span class="italic">n</span></sub></small>), which, in turn, is proportional to the electron affinity (EA) of the molecule. The electron affinity (EA) of the molecule is directly proportional to the LUMO energy (<span class="italic">ε</span><small><sub>LUMO</sub></small>) of the molecule (<a title="" href="#eqn4">eqn (4)</a>):<table><td class="leftEqn"> </td><tr><td class="eqn"><span id="eqn4"/>
+<span id="eqn4">Δ<span class="italic">G</span><small><sup>red1</sup></small><small><sub><span class="italic">n</span></sub></small> = <span class="italic">k</span><small><sub>1</sub></small>EA</span>
+</td><td class="rightEqn">(4)</td></tr></table><table><td class="leftEqn"> </td><tr><td class="eqn"><span id="eqn5"/>
+<span id="eqn5">EA = <span class="italic">k</span><small><sub>2</sub></small><span class="italic">ε</span><small><sub>LUMO</sub></small></span>
+</td><td class="rightEqn">(5)</td></tr></table>where <span class="italic">k</span><small><sub>1</sub></small> and <span class="italic">k</span><small><sub>2</sub></small> in <a title="" href="#eqn4">eqn (4)</a> and <a title="" href="#eqn5">(5)</a> are constants.</span>
+<p class="otherpara">Using <a title="" href="#eqn3">eqn (3)</a> and <a title="" href="#eqn4">(4)</a>, the reduction potential (<span class="italic">E</span><small><sup>red1</sup></small><small><sub><span class="italic">n</span></sub></small>) can be written using the following equations:<table><td class="leftEqn"> </td><tr><td class="eqn"><span id="eqn6"/>
+<span id="eqn6"><span class="italic">E</span><small><sup>red1</sup></small><small><sub><span class="italic">n</span></sub></small> = −<span class="italic">k</span><small><sub>1</sub></small><span class="italic">k</span><small><sub>2</sub></small> × <span class="italic">ε</span><small><sub>LUMO</sub></small></span>
+</td><td class="rightEqn">(6)</td></tr></table><table><td class="leftEqn"> </td><tr><td class="eqn"><span id="eqn7"/>
+<span id="eqn7"><span class="italic">E</span><small><sup>red1</sup></small><small><sub><span class="italic">n</span></sub></small> = −<span class="italic">K</span><small><sub><span class="italic">n</span></sub></small> × <span class="italic">ε</span><small><sub>LUMO</sub></small></span>
+</td><td class="rightEqn">(7)</td></tr></table>where <span class="italic">K</span><small><sub><span class="italic">n</span></sub></small> is the product of <span class="italic">k</span><small><sub>1</sub></small> and <span class="italic">k</span><small><sub>2</sub></small>.</p>
+<p class="otherpara">As part of the data set developed for the 40 quinoxaline derivatives shown in <a title="Select to navigate to table" href="#tab1">Table 1</a>, we have computed the <span class="italic">K</span><small><sub><span class="italic">n</span></sub></small> (for <span class="italic">n</span> = 1 to 40) values using the computed reduction potentials and energy of the LUMO. The computed average value of <span class="italic">K</span><small><sub><span class="italic">n</span></sub></small> is 0.69. Therefore, upon computing the LUMO energy of the neutral molecule, the prediction of the first reduction potential of a novel quinoxaline derivative can be made using the following relationship:<table><td class="leftEqn"> </td><tr><td class="eqn"><span id="eqn8"/>
+<span id="eqn8"><span class="italic">E</span><small><sup>red1</sup></small><small><sub>novel</sub></small> = −0.69 × <span class="italic">ε</span><small><sub>LUMO</sub></small></span>
+</td><td class="rightEqn">(8)</td></tr></table></p>
+<p class="otherpara">To show this comparison more effectively, we have computed the error function (δ<span class="italic">E</span>), a difference between the predicted reduction potentials (*<span class="italic">E</span><small><sup>Red1</sup></small>) using <a title="" href="#eqn8">eqn (8)</a> and the computed reduction potentials (<span class="italic">E</span><small><sup>Red1</sup></small>) from <a title="" href="#eqn3">eqn (3)</a> (Nernst equation), and the values are shown in <a title="Select to navigate to table" href="#tab1">Table 1</a>. The predicted reduction potentials are consistent with that of the computed reduction potentials as shown in <a title="Select to navigate to table" href="#tab1">Table 1</a> and Fig. S1<a title="Select to navigate to footnote" href="#fn1">†</a> and the average deviation between computed <span class="italic">vs.</span> predicted reduction potentials is 0.07 V. The greatest advantage of predicted potential over the computed one is the simplicity of the former, where only a single point energy evaluation of the neutral species is essential, while the latter requires more computationally intensive free energy evaluations of the neutral species and anions in solution. We note that by using scaled LUMO energies it is possible to predict the electron affinity of organic molecules with reasonable accuracy,<a title="Select to navigate to references" href="#cit54"><sup><span class="sup_ref">54</span></sup></a> unless the LUMO of the molecule is poorly defined by the level of theory.<a title="Select to navigate to references" href="#cit55"><sup><span class="sup_ref">55</span></sup></a> Additionally, the redox window is one of the desired properties required for screening. Other descriptors for solubility and stability are required for screening and to narrow down the candidates. This will be a subject for further investigation.</p>
+
+<h3 id="sect1276"><span class="b_heading">3.3 Validation of reduction potential descriptors for other nitrogen-containing species</span></h3>
+<span>In the previous section, we have successfully developed and tested a descriptive relationship for evaluating reduction potentials of quinoxaline derivatives using the computed LUMO energy of neutral species. To assess the broad applicability of this descriptive relationship for predicting reduction potential of other nitrogen containing molecules, we have chosen selected base molecules such as pyrazine, phenazine, and bipyridine. The structures of base molecules are shown in <a title="Select to navigate to figure" href="#imgfig3">Fig. 3</a> and schematics of all the derivatives of the base molecules are shown in Fig. S2a–c.<a title="Select to navigate to footnote" href="#fn1">†</a> The computed LUMO energies (eV), predicted first reduction potentials (*<span class="italic">E</span><small><sup>Red1</sup></small>) using <a title="" href="#eqn8">eqn (8)</a>, and computed reduction potentials (<span class="italic">E</span><small><sup>Red1</sup></small>) using <a title="" href="#eqn3">eqn (3)</a> for these 40 molecules are presented in <a title="Select to navigate to table" href="#tab3">Table 3</a>. The computed first reduction potentials of pyrazine, phenazine, and bipyridine are in good agreement (±0.1 V) with experimental studies<a title="Select to navigate to reference" href="#cit56"><sup><span class="sup_ref">56–58</span></sup></a> (<a title="Select to navigate to table" href="#tab3">Table 3</a>), indicating the accuracy of the computation methods. From <a title="Select to navigate to table" href="#tab3">Table 3</a>, it is shown that the predicted reduction potentials are in good agreement with the computed reduction potentials (from thermodynamic cycle).</span>
+<br/><div class="image_table"><table><tr><td colspan="3" class="imgHolder" id="imgfig3"><a href="/image/article/2014/RA/c4ra08563a/c4ra08563a-f3_hi-res.gif" title="Select to open image in new window" onclick="open(this.href, &#34;_blank&#34;, &#34;toolbar=1,scrollbars=yes,resizable=1&#34;); return false;"><img alt="image file: c4ra08563a-f3.tif" src="/image/article/2014/RA/c4ra08563a/c4ra08563a-f3.gif"/></a></td></tr><tr><td class="pushTitleRight"> </td><td class="image_title"><b>Fig. 3 </b> <span id="fig3"><span class="graphic_title">Schematic representation of pyrazine, phenazine, and bipyridine molecules.</span></span></td><td class="pushTitleLeft"> </td></tr></table></div>
+
+<div class="table_caption"><b>Table 3</b> <span id="tab3">Computed LUMO energies (eV), predicted first reduction potentials (*<span class="italic">E</span><small><sup>Red1</sup></small>), and computed reduction potentials (<span class="italic">E</span><small><sup>Red1</sup></small>) of pyrazine (P), phenazine (Ph), and bipyridine (B) derivatives at the B3LYP/6-31+G(d) level of theory. Italicized values in parentheses are from previous experimental studies</span>
+		</div>
+
+<div class="rtable__wrapper"><div class="rtable__inner"><table class="tgroup rtable" border="0"><colgroup><col/><col/><col/><col/><col/></colgroup>
+
+
+
+
+
+<thead align="left">
+<tr align="left" valign="bottom">
+<th rowspan="3" align="left" valign="bottom" class="border_black">Entries<i><small><sup style="color: red;"><a title="" href="#tab3fna">a</a></sup></small></i></th>
+<th rowspan="3" align="left" valign="bottom" class="border_black">Molecular species</th>
+<th rowspan="3" align="left" valign="bottom" class="border_black">LUMO (eV)</th>
+<th colspan="2" align="left" valign="bottom" class="border_black">Reduction potentials (V <span class="italic">vs.</span> Li/Li<small><sup>+</sup></small>)</th>
+</tr>
+<tr align="left" valign="bottom">
+<th align="left" valign="bottom" class="border_black">Predicted</th>
+<th align="left" valign="bottom" class="border_black">Computed</th>
+</tr>
+<tr align="left" valign="bottom">
+<th align="left" valign="bottom" class="border_black">*<span class="italic">E</span><small><sup>Red1</sup></small></th>
+<th align="left" valign="bottom" class="border_black"><span class="italic">E</span><small><sup>Red1</sup></small></th>
+</tr>
+</thead>
+<tfoot align="left">
+<tr align="left">
+<th colspan="5"><a id="tab3fna"><span class="tfootnote">a</span></a> <span class="sup_inf">Schematics of all the structures are given in Fig. S2.</span></th>
+</tr>
+</tfoot>
+<tbody align="left">
+<tr align="left">
+<td valign="top">41</td>
+<td valign="top">Pyrazine (P)</td>
+<td align="char" char="." valign="top">−1.83</td>
+<td align="char" char="." valign="top">1.07</td>
+<td valign="top">1.10 (<span class="italic">1.12</span> (<a title="Select to navigate to references" href="#cit56">ref. 56</a>))</td>
+</tr>
+<tr align="left">
+<td valign="top">42</td>
+<td valign="top">2-Methyl P</td>
+<td align="char" char="." valign="top">−1.62</td>
+<td align="char" char="." valign="top">0.95</td>
+<td valign="top">0.97</td>
+</tr>
+<tr align="left">
+<td valign="top">43</td>
+<td valign="top">2,3-Dimethyl P</td>
+<td align="char" char="." valign="top">−1.44</td>
+<td align="char" char="." valign="top">0.84</td>
+<td valign="top">0.82</td>
+</tr>
+<tr align="left">
+<td valign="top">44</td>
+<td valign="top">2,5-Dimethyl P</td>
+<td align="char" char="." valign="top">−1.45</td>
+<td align="char" char="." valign="top">0.85</td>
+<td valign="top">1.01</td>
+</tr>
+<tr align="left">
+<td valign="top">45</td>
+<td valign="top">2,6-Dimetyl P</td>
+<td align="char" char="." valign="top">−1.50</td>
+<td align="char" char="." valign="top">0.88</td>
+<td valign="top">0.96</td>
+</tr>
+<tr align="left">
+<td valign="top">46</td>
+<td valign="top">2,3,5-Trimethyl P</td>
+<td align="char" char="." valign="top">−1.27</td>
+<td align="char" char="." valign="top">0.74</td>
+<td valign="top">0.84</td>
+</tr>
+<tr align="left">
+<td valign="top">47</td>
+<td valign="top">2,3,5,6-Tetramethyl P</td>
+<td align="char" char="." valign="top">−1.12</td>
+<td align="char" char="." valign="top">0.65</td>
+<td valign="top">0.69</td>
+</tr>
+<tr align="left">
+<td valign="top">48</td>
+<td valign="top">2-Methoxy P</td>
+<td align="char" char="." valign="top">−1.58</td>
+<td align="char" char="." valign="top">0.92</td>
+<td valign="top">1.02</td>
+</tr>
+<tr align="left">
+<td valign="top">49</td>
+<td valign="top">2,3-Dimethoxy P</td>
+<td align="char" char="." valign="top">−1.13</td>
+<td align="char" char="." valign="top">0.66</td>
+<td valign="top">0.69</td>
+</tr>
+<tr align="left">
+<td valign="top">50</td>
+<td valign="top">2,5-Dimethoxy P</td>
+<td align="char" char="." valign="top">−1.53</td>
+<td align="char" char="." valign="top">0.89</td>
+<td valign="top">1.02</td>
+</tr>
+<tr align="left">
+<td valign="top">51</td>
+<td valign="top">2,6-Dimethoxy P</td>
+<td align="char" char="." valign="top">−1.24</td>
+<td align="char" char="." valign="top">0.72</td>
+<td valign="top">0.75</td>
+</tr>
+<tr align="left">
+<td valign="top">52</td>
+<td valign="top">2,3,5,6-Tetramethoxy P</td>
+<td align="char" char="." valign="top">−0.81</td>
+<td align="char" char="." valign="top">0.47</td>
+<td valign="top">0.66</td>
+</tr>
+<tr align="left">
+<td valign="top">53</td>
+<td valign="top">Phenazine (Ph)</td>
+<td align="char" char="." valign="top">−2.75</td>
+<td align="char" char="." valign="top">1.90</td>
+<td valign="top">2.01 (<span class="italic">2.04</span> (<a title="Select to navigate to references" href="#cit57">ref. 57</a>))</td>
+</tr>
+<tr align="left">
+<td valign="top">54</td>
+<td valign="top">1-Methyl Ph</td>
+<td align="char" char="." valign="top">−2.69</td>
+<td align="char" char="." valign="top">1.85</td>
+<td valign="top">1.96</td>
+</tr>
+<tr align="left">
+<td valign="top">55</td>
+<td valign="top">2-Methyl Ph</td>
+<td align="char" char="." valign="top">−2.85</td>
+<td align="char" char="." valign="top">1.97</td>
+<td valign="top">1.98</td>
+</tr>
+<tr align="left">
+<td valign="top">56</td>
+<td valign="top">1,2-Dimethyl Ph</td>
+<td align="char" char="." valign="top">−2.62</td>
+<td align="char" char="." valign="top">1.81</td>
+<td valign="top">1.95</td>
+</tr>
+<tr align="left">
+<td valign="top">57</td>
+<td valign="top">1,3-Dimethyl Ph</td>
+<td align="char" char="." valign="top">−2.58</td>
+<td align="char" char="." valign="top">1.78</td>
+<td valign="top">1.88</td>
+</tr>
+<tr align="left">
+<td valign="top">58</td>
+<td valign="top">1,4-Dimethyl Ph</td>
+<td align="char" char="." valign="top">−2.62</td>
+<td align="char" char="." valign="top">1.81</td>
+<td valign="top">1.91</td>
+</tr>
+<tr align="left">
+<td valign="top">59</td>
+<td valign="top">1,2,3-Trimethyl Ph</td>
+<td align="char" char="." valign="top">−2.53</td>
+<td align="char" char="." valign="top">1.74</td>
+<td valign="top">1.86</td>
+</tr>
+<tr align="left">
+<td valign="top">60</td>
+<td valign="top">1,2,3,4-Tetramethyl Ph</td>
+<td align="char" char="." valign="top">−2.45</td>
+<td align="char" char="." valign="top">1.69</td>
+<td valign="top">1.99</td>
+</tr>
+<tr align="left">
+<td valign="top">61</td>
+<td valign="top">2,3-Dimethyl Ph</td>
+<td align="char" char="." valign="top">−2.57</td>
+<td align="char" char="." valign="top">1.77</td>
+<td valign="top">1.91</td>
+</tr>
+<tr align="left">
+<td valign="top">62</td>
+<td valign="top">1-Chloro Ph</td>
+<td align="char" char="." valign="top">−2.95</td>
+<td align="char" char="." valign="top">2.04</td>
+<td valign="top">2.13</td>
+</tr>
+<tr align="left">
+<td valign="top">63</td>
+<td valign="top">2-Chloro Ph</td>
+<td align="char" char="." valign="top">−2.95</td>
+<td align="char" char="." valign="top">2.04</td>
+<td valign="top">2.11</td>
+</tr>
+<tr align="left">
+<td valign="top">64</td>
+<td valign="top">1,2,8,9-Tetramethyl Ph</td>
+<td align="char" char="." valign="top">−2.49</td>
+<td align="char" char="." valign="top">1.72</td>
+<td valign="top">1.84</td>
+</tr>
+<tr align="left">
+<td valign="top">65</td>
+<td valign="top">1,4,6,9-Tetramethyl Ph</td>
+<td align="char" char="." valign="top">−2.43</td>
+<td align="char" char="." valign="top">1.67</td>
+<td valign="top">1.74</td>
+</tr>
+<tr align="left">
+<td valign="top">66</td>
+<td valign="top">1,2,7,8-Tetramethyl Ph</td>
+<td align="char" char="." valign="top">−2.46</td>
+<td align="char" char="." valign="top">1.70</td>
+<td valign="top">1.81</td>
+</tr>
+<tr align="left">
+<td valign="top">67</td>
+<td valign="top">1,2,6,7-Tetramethyl Ph</td>
+<td align="char" char="." valign="top">−2.45</td>
+<td align="char" char="." valign="top">1.69</td>
+<td valign="top">1.78</td>
+</tr>
+<tr align="left">
+<td valign="top">68</td>
+<td valign="top">2,3,7,8-Tetramethyl Ph</td>
+<td align="char" char="." valign="top">−2.40</td>
+<td align="char" char="." valign="top">1.65</td>
+<td valign="top">1.8</td>
+</tr>
+<tr align="left">
+<td valign="top">69</td>
+<td valign="top">1,2,3,4,6,7,8,9-Octamethyl Ph</td>
+<td align="char" char="." valign="top">−2.18</td>
+<td align="char" char="." valign="top">1.51</td>
+<td valign="top">1.57</td>
+</tr>
+<tr align="left">
+<td valign="top">60</td>
+<td valign="top">1-<span class="italic">tert</span>-Butyl Ph</td>
+<td align="char" char="." valign="top">−2.68</td>
+<td align="char" char="." valign="top">1.85</td>
+<td valign="top">1.9</td>
+</tr>
+<tr align="left">
+<td valign="top">71</td>
+<td valign="top">2-<span class="italic">tert</span>-Butyl Ph</td>
+<td align="char" char="." valign="top">−2.67</td>
+<td align="char" char="." valign="top">1.84</td>
+<td valign="top">1.96</td>
+</tr>
+<tr align="left">
+<td valign="top">72</td>
+<td valign="top">Bipyridine (B)</td>
+<td align="char" char="." valign="top">−2.02</td>
+<td align="char" char="." valign="top">1.18</td>
+<td valign="top">1.31 (<span class="italic">1.19</span> (<a title="Select to navigate to references" href="#cit58">ref. 58</a>))</td>
+</tr>
+<tr align="left">
+<td valign="top">73</td>
+<td valign="top">2-Methyl B</td>
+<td align="char" char="." valign="top">−1.94</td>
+<td align="char" char="." valign="top">1.13</td>
+<td valign="top">1.27</td>
+</tr>
+<tr align="left">
+<td valign="top">74</td>
+<td valign="top">2,3-Dimethyl B</td>
+<td align="char" char="." valign="top">−1.62</td>
+<td align="char" char="." valign="top">0.94</td>
+<td valign="top">1.00</td>
+</tr>
+<tr align="left">
+<td valign="top">75</td>
+<td valign="top">2,5-Dimethyl B</td>
+<td align="char" char="." valign="top">−1.70</td>
+<td align="char" char="." valign="top">0.99</td>
+<td valign="top">1.05</td>
+</tr>
+<tr align="left">
+<td valign="top">76</td>
+<td valign="top">2,6-Dimethyl B</td>
+<td align="char" char="." valign="top">−1.87</td>
+<td align="char" char="." valign="top">1.09</td>
+<td valign="top">1.21</td>
+</tr>
+<tr align="left">
+<td valign="top">77</td>
+<td valign="top">2,3,5,6-Tetramethyl B</td>
+<td align="char" char="." valign="top">−1.17</td>
+<td align="char" char="." valign="top">0.69</td>
+<td valign="top">0.70</td>
+</tr>
+<tr align="left">
+<td valign="top">78</td>
+<td valign="top">2,2′-Dimethyl B</td>
+<td align="char" char="." valign="top">−1.86</td>
+<td align="char" char="." valign="top">1.09</td>
+<td valign="top">1.21</td>
+</tr>
+<tr align="left">
+<td valign="top">79</td>
+<td valign="top">2,2′,6,6′-Tetramethyl B</td>
+<td align="char" char="." valign="top">−1.72</td>
+<td align="char" char="." valign="top">1.00</td>
+<td valign="top">1.15</td>
+</tr>
+<tr align="left">
+<td valign="top">80</td>
+<td valign="top">2,2′,3,3′,5,5′,6,6′-Octamethyl B</td>
+<td align="char" char="." valign="top">−0.63</td>
+<td align="char" char="." valign="top">0.37</td>
+<td valign="top">0.32</td>
+</tr>
+</tbody>
+</table></div></div>
+<hr class="hrule"/><br/>
+<p class="otherpara">To show this comparison more effectively, the predicted reduction potentials <span class="italic">versus</span> the computed reduction potentials for all derivatives from <a title="Select to navigate to table" href="#tab3">Table 3</a> are shown in <a title="Select to navigate to figure" href="#imgfig4">Fig. 4</a>. The linearity of the data points with a regression coefficient of <span class="italic">ca.</span> 0.98 indicates that the relationship is promising and can be useful for a fast first-tier screening procedure for quinoxaline, pyrazine, phenazine, and bipyridine families. To further show the application of this descriptive relationship (<a title="" href="#eqn8">eqn (8)</a>), in <a title="Select to navigate to figure" href="#imgfig5">Fig. 5</a> we show the computed <span class="italic">vs.</span> predicted reduction potentials of 9 different aromatic nitrogen families. These are quinoxaline, pyrazine, phenazine, bipyridine pyridine, pyrimidine, pyridazine, quinoline and isoquinoline. The predicted reduction potentials using <a title="" href="#eqn8">eqn (8)</a> are in good agreement with the computed reduction potentials for all molecules, indicating that the relationship can be used for the fast first-tier screening procedure for aromatic nitrogen-containing molecules provided the LUMO energy can be computed at the B3LYP/6-31+G(d) level of theory.</p>
+<br/><div class="image_table"><table><tr><td colspan="3" class="imgHolder" id="imgfig4"><a href="/image/article/2014/RA/c4ra08563a/c4ra08563a-f4_hi-res.gif" title="Select to open image in new window" onclick="open(this.href, &#34;_blank&#34;, &#34;toolbar=1,scrollbars=yes,resizable=1&#34;); return false;"><img alt="image file: c4ra08563a-f4.tif" src="/image/article/2014/RA/c4ra08563a/c4ra08563a-f4.gif"/></a></td></tr><tr><td class="pushTitleRight"> </td><td class="image_title"><b>Fig. 4 </b> <span id="fig4"><span class="graphic_title">Computed reduction potentials using <a title="" href="#eqn3">eqn (3)</a> <span class="italic">vs.</span> the predicted reduction potentials using <a title="" href="#eqn8">eqn (8)</a> for pyrazine, phenazine, and bipyridine derivatives (from <a title="Select to navigate to table" href="#tab3">Table 3</a>).</span></span></td><td class="pushTitleLeft"> </td></tr></table></div>
+<br/><div class="image_table"><table><tr><td colspan="3" class="imgHolder" id="imgfig5"><a href="/image/article/2014/RA/c4ra08563a/c4ra08563a-f5_hi-res.gif" title="Select to open image in new window" onclick="open(this.href, &#34;_blank&#34;, &#34;toolbar=1,scrollbars=yes,resizable=1&#34;); return false;"><img alt="image file: c4ra08563a-f5.tif" src="/image/article/2014/RA/c4ra08563a/c4ra08563a-f5.gif"/></a></td></tr><tr><td class="pushTitleRight"> </td><td class="image_title"><b>Fig. 5 </b> <span id="fig5"><span class="graphic_title">Comparison of computed reduction potentials (using <a title="" href="#eqn3">eqn (3)</a>) <span class="italic">vs.</span> the predicted reduction potentials (using <a title="" href="#eqn8">eqn (8)</a>) for various aromatic nitrogen-containing molecules. The data associated with this figure are presented in Table S2.<a title="Select to navigate to footnote" href="#fn1">†</a></span></span></td><td class="pushTitleLeft"> </td></tr></table></div>
+
+
+<h2 id="sect1600"><span class="a_heading">4. Conclusions</span></h2>
+<span>Here, we investigated the application of quantum chemical methods for the computation of quinoxaline reduction potentials and for the development of a simple descriptor that enables reduction potential predictions of nitrogen-containing aromatics without computationally demanding free energy simulations. First, quantum chemical calculations were performed on 40 quinoxaline derivatives to determine the impact of substituent groups, both electron-withdrawing and electron-donating, on reduction potentials. The calculations indicate the addition of electron-donating groups, particularly alkyl groups, can lower the reduction potential of quinoxalines albeit with concomitant decreases in oxidative stability. It should be noted that the benefits of lower reduction potentials must be balanced with the increase in molecular weights which together impact specific energy. Based on this computational study, we derived a descriptor for computing reduction potentials of novel quinoxaline derivatives without time-consuming free energy and solvation calculations. Finally, we validated this descriptive relationship for select aromatic nitrogen-containing molecules: pyrazine, phenazine, bipyridine pyridine, pyrimidine, pyridazine, quinoline, and isoquinoline. We anticipate that these simple descriptors may be used in high-throughput computational screening of thousands of organic molecules to down select candidates with promising reduction properties for RFB application.</span>
+
+
+<h2 id="sect1605"><span class="a_heading">Acknowledgements</span></h2><span>This work was supported as part of the Joint Center for Energy Storage Research, an Energy Innovation Hub funded by the U.S. Department of Energy, Office of Science, Basic Energy Sciences. We gratefully acknowledge the computing resources provided on “Blues”, a 320-node computing cluster operated by the Laboratory Computing Resource Center at Argonne National Laboratory. Use of the Center for Nanoscale Materials was supported by the U.S. Department of Energy, Office of Science, Office of Basic Energy Sciences, under Contract no. DE-AC02-06CH11357.</span>
+<span id="sect1607"><h2 id="sect1604"><span class="a_heading">References</span></h2></span><ol type="1"><li><span id="cit1">B. Dunn, H. Kamath and J. M. Tarascon, <span class="italic">Science</span>, 2011, <span class="bold">334</span>, 928–935 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1126/science.1212741" title="DOI Link to resource 10.1126/science.1212741">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXhsVGktL%252FJ" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22096188%5Buid%5D" title="PubMed Link to resource 22096188">PubMed</a>.</span></li><li><span id="cit2">P. G. Bruce, S. A. Freunberger, L. J. Hardwick and J.-M. Tarascon, <span class="italic">Nat. Mater.</span>, 2011, <span class="bold">11</span>, 19–29 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1038/nmat3191" title="DOI Link to resource 10.1038/nmat3191">CrossRef</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22169914%5Buid%5D" title="PubMed Link to resource 22169914">PubMed</a>.</span></li><li><span id="cit3">D. Rastler, <span class="italic">Electricity Energy Storage Options: A white paper Primer on Applications, Costs and Benefits, EPRI Technical Update 1020676</span>,  2010 <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Electricity%20Energy%20Storage%20Options:%20A%20white%20paper%20Primer%20on%20Applications,%20Costs%20and%20Benefits,%20EPRI%20Technical%20Update%201020676%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202010%5Bpdat%5D" title="Search PubMed for this citation">Search PubMed</a>.</span></li><li><span id="cit4">J. Eyer and G. Gorey, <span class="italic">Energy Storage for the Electricity Grid: benefits and Market Potential Assessment Guide, Sandia Report SAND2010-0815</span>,  2010 <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Energy%20Storage%20for%20the%20Electricity%20Grid:%20benefits%20and%20Market%20Potential%20Assessment%20Guide,%20Sandia%20Report%20SAND2010-0815%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202010%5Bpdat%5D" title="Search PubMed for this citation">Search PubMed</a>.</span></li><li><span id="cit5">Z. G. Yang, J. L. Zhang, M. C. W. Kintner-Meyer, X. C. Lu, D. W. Choi, J. P. Lemmon and J. Liu, <span class="italic">Chem. Rev.</span>, 2011, <span class="bold">111</span>, 3577–3613 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/cr100290v" title="DOI Link to resource 10.1021/cr100290v">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXisl2rs7g%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=21375330%5Buid%5D" title="PubMed Link to resource 21375330">PubMed</a>.</span></li><li><span id="cit6">P. Poizot and F. Dolhem, <span class="italic">Energy Environ. Sci.</span>, 2011, <span class="bold">4</span>, 2003–2019 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXovVCmtrk%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit7">M. Armand and J. M. Tarascon, <span class="italic">Nature</span>, 2008, <span class="bold">451</span>, 652–657 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1038/451652a" title="DOI Link to resource 10.1038/451652a">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXhs1Kntrc%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=18256660%5Buid%5D" title="PubMed Link to resource 18256660">PubMed</a>.</span></li><li><span id="cit8">M. Skyllas-Kazacos, M. H. Chakrabarti, S. A. Hajimolana, F. S. Mjalli and M. Saleem, <span class="italic">J. Electrochem. Soc.</span>, 2011, <span class="bold">158</span>, R55–R79 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1149/1.3599565" title="DOI Link to resource 10.1149/1.3599565">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXotVygs70%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20199521%5Buid%5D" title="PubMed Link to resource 20199521">PubMed</a>.</span></li><li><span id="cit9">W. Wang, Q. T. Luo, B. Li, X. L. Wei, L. Y. Li and Z. G. Yang, <span class="italic">Adv. Funct. Mater.</span>, 2013, <span class="bold">23</span>, 970–986 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1002/adfm.201200694" title="DOI Link to resource 10.1002/adfm.201200694">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XhtlSgtLzI" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit10">Z. Song and H. Zhou, <span class="italic">Energy Environ. Sci.</span>, 2013, <span class="bold">6</span>, 2280–2301 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3sXhtFOisr3J" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit11">F. R. Brushett, J. T. Vaughey and A. N. Jansen, <span class="italic">Adv. Energy Mater.</span>, 2013, <span class="bold">2</span>, 1390–1396 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1002/aenm.201200322" title="DOI Link to resource 10.1002/aenm.201200322">CrossRef</a>.</span></li><li><span id="cit12">S. Renault, S. Gottis, A.-L. Barres, M. Courty, O. Chauvet, F. Dolhem and P. Poizot, <span class="italic">Energy Environ. Sci.</span>, 2013, <span class="bold">6</span>, 2124–2133 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3sXhtVWmtLzN" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit13">B. Huskinson, M. P. Marshak, C. Suh, S. Er, M. R. Gerhardt, C. J. Galvin, X. Chen, A. Aspuru-Guzik, R. G. Gordon and M. J. Aziz, <span class="italic">Nature</span>, 2014, <span class="bold">505</span>, 195–198 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1038/nature12909" title="DOI Link to resource 10.1038/nature12909">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXltVeisg%253D%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=24402280%5Buid%5D" title="PubMed Link to resource 24402280">PubMed</a>.</span></li><li><span id="cit14">B. Yang, L. Hoober-Burkhardt, F. Wang, G. S. Prakash and S. Narayanan, <span class="italic">J. Electrochem. Soc.</span>, 2014, <span class="bold">161</span>, A1371–A1380 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1149/2.1001409jes" title="DOI Link to resource 10.1149/2.1001409jes">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXhtFOnsrnO" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20199521%5Buid%5D" title="PubMed Link to resource 20199521">PubMed</a>.</span></li><li><span id="cit15">X. Wei, L. Cosimbescu, W. Xu, J. Z. Hu, M. Vijayakumar, J. Feng, M. Y. Hu, X. Deng, J. Xiao, J. Liu, V. Sprenkle and W. Wang, <span class="italic">Adv. Energy Mater.</span>, 2014, 1400678 <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Adv.%20Energy%20Mater.%5BJour%5D%20AND%20%5Bvolume%5D%20AND%201400678%5Bpage%5D%20and%202014%5Bpdat%5D" title="Search PubMed for this citation">Search PubMed</a>.</span></li><li><span id="cit16">Z. Li, S. Li, S. Liu, K. Huang, D. Fang, F. Wang and S. Peng, <span class="italic">Electrochem. Solid-State Lett.</span>, 2011, <span class="bold">14</span>, A171–A173 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1149/2.012112esl" title="DOI Link to resource 10.1149/2.012112esl">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXhsVagsr%252FN" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20199521%5Buid%5D" title="PubMed Link to resource 20199521">PubMed</a>.</span></li><li><span id="cit17">B. Huskinson, S. Nawar, M. R. Gerhardt and M. J. Aziz, <span class="italic">ECS Trans.</span>, 2013, <span class="bold">53</span>, 101–105 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1149/05307.0101ecst" title="DOI Link to resource 10.1149/05307.0101ecst">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXos1Ogt7Y%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20199521%5Buid%5D" title="PubMed Link to resource 20199521">PubMed</a>.</span></li><li><span id="cit18">W. Wang, W. Xu, L. Cosimbescu, D. Choi, L. Li and Z. Yang, <span class="italic">Chem. Commun.</span>, 2012, <span class="bold">48</span>, 6669–6671 <a target="_blank" class="RSCLink" href="http://xlink.rsc.org.ezproxy.uky.edu/?doi=C2CC32466K&amp;newsite=1" title="Link to RSC resource DOI:10.1039/C2CC32466K">RSC</a>.</span></li><li><span id="cit19">J. C. Henderson, Y. Kiya, G. R. Hutchison and H. c. D. Abruna, <span class="italic">J. Phys. Chem. C</span>, 2008, <span class="bold">112</span>, 3989–3997 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1cXhvV2mt70%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit20">W. D. Zhou, K. Hernandez-Burgos, S. E. Burkhardt, H. L. Qian and H. D. Abruna, <span class="italic">J. Phys. Chem. C</span>, 2013, <span class="bold">117</span>, 6022–6032 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3sXjs1yhtb4%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit21">Z. Chen, Y. Qin and K. Amine, <span class="italic">Electrochim. Acta</span>, 2009, <span class="bold">54</span>, 5605–5613 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1016/j.electacta.2009.05.017" title="DOI Link to resource 10.1016/j.electacta.2009.05.017">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1MXnslKgsLk%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25077353%5Buid%5D" title="PubMed Link to resource 25077353">PubMed</a>.</span></li><li><span id="cit22">D. Méndez-Hernández, P. Tarakeshwar, D. Gust, T. Moore, A. Moore and V. Mujica, <span class="italic">J. Mol. Model.</span>, 2013, <span class="bold">19</span>, 2845–2848 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1007/s00894-012-1694-7" title="DOI Link to resource 10.1007/s00894-012-1694-7">CrossRef</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=23224940%5Buid%5D" title="PubMed Link to resource 23224940">PubMed</a>.</span></li><li><span id="cit23">J. R. T. Johnsson Wass, E. Ahlberg, I. Panas and D. J. Schiffrin, <span class="italic">J. Phys. Chem. A</span>, 2006, <span class="bold">110</span>, 2005–2020 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp055414z" title="DOI Link to resource 10.1021/jp055414z">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD28XjvV2gtA%253D%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16451036%5Buid%5D" title="PubMed Link to resource 16451036">PubMed</a>.</span></li><li><span id="cit24">M. Namazian and M. L. Coote, <span class="italic">J. Phys. Chem. A</span>, 2007, <span class="bold">111</span>, 7227–7232 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp0725883" title="DOI Link to resource 10.1021/jp0725883">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXns1Cgu7g%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17625811%5Buid%5D" title="PubMed Link to resource 17625811">PubMed</a>.</span></li><li><span id="cit25">M. Namazian, H. A. Almodarresieh, M. R. Noorbala and H. R. Zare, <span class="italic">Chem. Phys. Lett.</span>, 2004, <span class="bold">396</span>, 424–428 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1016/j.cplett.2004.08.089" title="DOI Link to resource 10.1016/j.cplett.2004.08.089">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2cXnsVGqu7c%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25077353%5Buid%5D" title="PubMed Link to resource 25077353">PubMed</a>.</span></li><li><span id="cit26">K. S. Raymond, A. K. Grafton and R. A. Wheeler, <span class="italic">J. Phys. Chem. B</span>, 1997, <span class="bold">101</span>, 623–631 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp961852h" title="DOI Link to resource 10.1021/jp961852h">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK2sXmtVOr" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit27">K. Hernández-Burgos, S. E. Burkhardt, G. G. Rodríguez-Calero, R. G. Hennig and H. D. Abruña, <span class="italic">J. Phys. Chem. C</span>, 2014, <span class="bold">118</span>, 6046–6051 <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=J.%20Phys.%20Chem.%20C%5BJour%5D%20AND%20118%5Bvolume%5D%20AND%206046%5Bpage%5D%20and%202014%5Bpdat%5D" title="Search PubMed for this citation">Search PubMed</a>.</span></li><li><span id="cit28">J. E. Bachman, L. A. Curtiss and R. S. Assary, <span class="italic">J. Phys. Chem. A</span>, 2014, <span class="bold">118</span>, 8852–8860 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp5060777" title="DOI Link to resource 10.1021/jp5060777">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXhsVeksbjF" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=25159500%5Buid%5D" title="PubMed Link to resource 25159500">PubMed</a>.</span></li><li><span id="cit29">C. Karlsson, E. Jamstorp, M. Stromme and M. Sjodin, <span class="italic">J. Phys. Chem. C</span>, 2012, <span class="bold">116</span>, 3793–3801 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XptF2q" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit30">C. Karlsson, A. Gogoll, M. Stromme and M. Sjodin, <span class="italic">J. Phys. Chem. C</span>, 2013, <span class="bold">117</span>, 894–901 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XhvVCqsLbP" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit31">L. Wang, T. Maxisch and G. Ceder, <span class="italic">Phys. Rev. B: Condens. Matter Mater. Phys.</span>, 2006, <span class="bold">73</span>, 195107 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1103/PhysRevB.73.195107" title="DOI Link to resource 10.1103/PhysRevB.73.195107">CrossRef</a>.</span></li><li><span id="cit32">A. Jain, S. P. Ong, G. Hautier, W. Chen, W. D. Richards, S. Dacek, S. Cholia, D. Gunter, D. Skinner, G. Ceder and K. A. Persson, <span class="italic">APL Mater.</span>, 2013, <span class="bold">1</span>, 011002 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1063/1.4812323" title="DOI Link to resource 10.1063/1.4812323">CrossRef</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=24313031%5Buid%5D" title="PubMed Link to resource 24313031">PubMed</a>.</span></li><li><span id="cit33">J. Hachmann, R. Olivares-Amaya, A. Jinich, A. L. Appleton, M. A. Blood-Forsythe, L. s. R. Seress, C. Roman-Salgado, K. Trepte, S. Atahan-Evrenk and S. l. Er, <span class="italic">Energy Environ. Sci.</span>, 2014, <span class="bold">7</span>, 698–704 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXhsFaksb8%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit34">G. W. T. M. J. Frisch, H. B. Schlegel, G. E. Scuseria, M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci, G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian, A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada, M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery, Jr, J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers, K. N. Kudin, V. N. Staroverov, R. Kobayashi, J. Normand, K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi, M. Cossi, N. Rega, J. M. Millam, M. Klene, J. E. Knox, J. B. Cross, V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann, O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski, R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth, P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels, Ö. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski and D. J. Fox, <span class="italic">Gaussian 09, Revision D.01</span>, Gaussian, Inc., Wallingford CT,  2009 <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/sites/entrez?orig_db=PubMed&amp;db=pubmed&amp;cmd=Search&amp;term=Gaussian%2009,%20Revision%20D.01%5BJour%5D%20AND%20%5Bvolume%5D%20AND%20%5Bpage%5D%20and%202009%5Bpdat%5D" title="Search PubMed for this citation">Search PubMed</a>.</span></li><li><span id="cit35">A. V. Marenich, C. J. Cramer and D. G. Truhlar, <span class="italic">J. Phys. Chem. B</span>, 2009, <span class="bold">113</span>, 6378–6396 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp810292n" title="DOI Link to resource 10.1021/jp810292n">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD1MXksV2is74%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=19366259%5Buid%5D" title="PubMed Link to resource 19366259">PubMed</a>.</span></li><li><span id="cit36">A. V. Marenich, J. Ho, M. L. Coote, C. J. Cramer and D. G. Truhlar, <span class="italic">Phys. Chem. Chem. Phys.</span>, 2014, <span class="bold">16</span>, 15068–15106 <a target="_blank" class="RSCLink" href="http://xlink.rsc.org.ezproxy.uky.edu/?doi=C4CP01572J&amp;newsite=1" title="Link to RSC resource DOI:10.1039/C4CP01572J">RSC</a>.</span></li><li><span id="cit37">J. J. Guerard and J. S. Arey, <span class="italic">J. Chem. Theory Comput.</span>, 2013, <span class="bold">9</span>, 5046–5058 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/ct4004433" title="DOI Link to resource 10.1021/ct4004433">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3sXhs1Cgs7fE" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit38">R. S. Assary, L. A. Curtiss and J. S. Moore, <span class="italic">J. Phys. Chem. C</span>, 2014, <span class="bold">118</span>, 11545–11558 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC2cXnslarurk%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit39">A. A. Isse and A. Gennaro, <span class="italic">J. Phys. Chem. B</span>, 2010, <span class="bold">114</span>, 7894–7899 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp100402x" title="DOI Link to resource 10.1021/jp100402x">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3cXmsVGjtro%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20496903%5Buid%5D" title="PubMed Link to resource 20496903">PubMed</a>.</span></li><li><span id="cit40">S. Bhattacharyya, M. T. Stankovich, D. G. Truhlar and J. Gao, <span class="italic">J. Phys. Chem. A</span>, 2007, <span class="bold">111</span>, 5729–5742 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp071526+" title="DOI Link to resource 10.1021/jp071526+">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXmtlOnsbw%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17567113%5Buid%5D" title="PubMed Link to resource 17567113">PubMed</a>.</span></li><li><span id="cit41">C. P. Kelly, C. J. Cramer and D. G. Truhlar, <span class="italic">J. Phys. Chem. B</span>, 2006, <span class="bold">110</span>, 16066–16081 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp063552y" title="DOI Link to resource 10.1021/jp063552y">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD28XntFKksL4%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=16898764%5Buid%5D" title="PubMed Link to resource 16898764">PubMed</a>.</span></li><li><span id="cit42">J. Moens, P. Geerlings and G. Roos, <span class="italic">Chem.–Eur. J.</span>, 2007, <span class="bold">13</span>, 8174–8184 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1002/chem.200601896" title="DOI Link to resource 10.1002/chem.200601896">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXht1Sju73J" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17506046%5Buid%5D" title="PubMed Link to resource 17506046">PubMed</a>.</span></li><li><span id="cit43">O. Borodin, W. Behl and T. R. Jow, <span class="italic">J. Phys. Chem. C</span>, 2013, <span class="bold">117</span>, 8661–8682 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3sXltl2gtrw%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit44">J. M. Vollmer, L. A. Curtiss, D. R. Vissers and K. Amine, <span class="italic">J. Electrochem. Soc.</span>, 2004, <span class="bold">151</span>, A178–A183 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1149/1.1633765" title="DOI Link to resource 10.1149/1.1633765">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD3sXpvFOks7s%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20199521%5Buid%5D" title="PubMed Link to resource 20199521">PubMed</a>.</span></li><li><span id="cit45">C. P. Kelly, C. J. Cramer and D. G. Truhlar, <span class="italic">J. Phys. Chem. B</span>, 2006, <span class="bold">111</span>, 408–422 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp065403l" title="DOI Link to resource 10.1021/jp065403l">CrossRef</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17214493%5Buid%5D" title="PubMed Link to resource 17214493">PubMed</a>.</span></li><li><span id="cit46">L. Xing, O. Borodin, G. D. Smith and W. Li, <span class="italic">J. Phys. Chem. A</span>, 2011, <span class="bold">115</span>, 13896–13905 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp206153n" title="DOI Link to resource 10.1021/jp206153n">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXhtlaltbjK" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22004044%5Buid%5D" title="PubMed Link to resource 22004044">PubMed</a>.</span></li><li><span id="cit47">R. L. Wang, C. Buhrmester and J. R. Dahn, <span class="italic">J. Electrochem. Soc.</span>, 2006, <span class="bold">153</span>, A445–A449 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1149/1.2140613" title="DOI Link to resource 10.1149/1.2140613">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD28XptVOnsQ%253D%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=20199521%5Buid%5D" title="PubMed Link to resource 20199521">PubMed</a>.</span></li><li><span id="cit48">R. S. Assary, L. A. Curtiss, P. C. Redfern, Z. Zhang and K. Amine, <span class="italic">J. Phys. Chem. C</span>, 2011, <span class="bold">115</span>, 12216–12223 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC3MXmvFOjt7Y%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit49">A. Z. Szarka, L. A. Curtiss and J. R. Miller, <span class="italic">Chem. Phys.</span>, 1999, <span class="bold">246</span>, 147–155 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1016/S0301-0104(99)00120-2" title="DOI Link to resource 10.1016/S0301-0104(99)00120-2">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1MXksFCis7w%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit50">S. E. Burkhardt, M. A. Lowe, S. Conte, W. D. Zhou, H. L. Qian, G. G. Rodriguez-Calero, J. Gao, R. G. Hennig and H. D. Abruna, <span class="italic">Energy Environ. Sci.</span>, 2012, <span class="bold">5</span>, 7176–7187 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BC38XmsVWqtrg%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit51">L. Xing and O. Borodin, <span class="italic">Phys. Chem. Chem. Phys.</span>, 2012, <span class="bold">14</span>, 12838–12843 <a target="_blank" class="RSCLink" href="http://xlink.rsc.org.ezproxy.uky.edu/?doi=C2CP41103B&amp;newsite=1" title="Link to RSC resource DOI:10.1039/C2CP41103B">RSC</a>.</span></li><li><span id="cit52">J. R. Ames, M. A. Houghtaling and D. L. Terrian, <span class="italic">Electrochim. Acta</span>, 1992, <span class="bold">37</span>, 1433–1436 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1016/0013-4686(92)87018-U" title="DOI Link to resource 10.1016/0013-4686(92)87018-U">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK38XkvF2mtr4%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit53">K. R. Barqawi and M. A. Atfah, <span class="italic">Electrochim. Acta</span>, 1987, <span class="bold">32</span>, 597–599 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1016/0013-4686(87)87047-0" title="DOI Link to resource 10.1016/0013-4686(87)87047-0">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL2sXktFCmtLY%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit54">G. Zhang and C. B. Musgrave, <span class="italic">J. Phys. Chem. A</span>, 2007, <span class="bold">111</span>, 1554–1561 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/jp061633o" title="DOI Link to resource 10.1021/jp061633o">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD2sXht1yrs7w%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=17279730%5Buid%5D" title="PubMed Link to resource 17279730">PubMed</a>.</span></li><li><span id="cit55">R. Stowasser and R. Hoffmann, <span class="italic">J. Am. Chem. Soc.</span>, 1999, <span class="bold">121</span>, 3414–3420 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/ja9826892" title="DOI Link to resource 10.1021/ja9826892">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaK1MXhvFOmsrk%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit56">S. O. Yaman, E. Esenturk, C. Kayran and A. M. Onal, <span class="italic">Z. Naturforsch., B: J. Chem. Sci.</span>, 2002, <span class="bold">57</span>, 92–98 <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADC%252BD38Xit1Ciur4%253D" title="Link to resource in CAS">CAS</a>.</span></li><li><span id="cit57">D. T. Sawyer and R. Y. Komai, <span class="italic">Anal. Chem.</span>, 1972, <span class="bold">44</span>, 715–721 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/ac60312a002" title="DOI Link to resource 10.1021/ac60312a002">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaE38XhtFantLo%253D" title="Link to resource in CAS">CAS</a> <a target="_blank" class="PMedLink" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=22309528%5Buid%5D" title="PubMed Link to resource 22309528">PubMed</a>.</span></li><li><span id="cit58">C. V. Krishnan, C. Creutz, H. A. Schwarz and N. Sutin, <span class="italic">J. Am. Chem. Soc.</span>, 1983, <span class="bold">105</span>, 5617–5623 <a target="_blank" class="DOILink" href="https://doi-org.ezproxy.uky.edu/10.1021/ja00355a015" title="DOI Link to resource 10.1021/ja00355a015">CrossRef</a> <a target="_blank" class="COILink" href="/en/content/coiresolver?coi=1%3ACAS%3A528%3ADyaL3sXkslyrtbs%253D" title="Link to resource in CAS">CAS</a>.</span></li></ol>
+
+
+
+
+<hr/><table><tr><td><h3>Footnote</h3></td></tr><tr><td><span class="sup_ref">† <span id="fn1">Electronic supplementary information (ESI) available: An example of all-organic redox flow battery (Scheme S1), computed reduction potentials of quinoxaline using various levels of theory (Table S1A), computed reduction potentials in various dielectric mediums (Table S1B), comparison of computed <span class="italic">vs.</span> predicted reduction potential of various aromatic nitrogen-containing molecules (Table S2), computed reduction potentials <span class="italic">vs.</span> the predicted reduction potentials for quinoxaline derivatives (Fig. S1), and selected pyrazine (Fig. S2a), phenazine (Fig. S2b), and bipyridine molecules (Fig. S2c) are present. See DOI: <a href="http://xlink.rsc.org.ezproxy.uky.edu/?DOI=c4ra08563a" target="_blank" title="Select to resolve DOI: 10.1039/c4ra08563a">10.1039/c4ra08563a</a></span></span></td></tr></table><table><tr><td><hr/></td></tr><tr><td><b>This journal is © The Royal Society of Chemistry 2014</b></td></tr></table></div></div></div></body><script src="/content/scripts/CrossMarkIE.js"> </script><SaxonLicenceTest result="pass" message="Licenced Enterprise Edition [ EE 9.3.0.4 ]"/></html>
